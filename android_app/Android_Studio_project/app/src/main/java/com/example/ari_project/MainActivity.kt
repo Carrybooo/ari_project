@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         scanner_view = findViewById(R.id.scanner_view)
 
         setupPermissions()
-        codeScanner();
+        codeScanner()
     }
 
     private fun codeScanner() {
@@ -103,8 +103,6 @@ class MainActivity : AppCompatActivity() {
                         "Vous devez avoir l'autorisation d'utiliser la caméra pour utiliser l'appli !",
                         Toast.LENGTH_SHORT
                     ).show()
-                } else {
-                    //Tout est bon
                 }
             }
         }

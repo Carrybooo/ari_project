@@ -1,46 +1,46 @@
 [
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-mdpi_poseidon_logo.png.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-mdpi/poseidon_logo.png"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_poseidon_logo.png.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-hdpi/poseidon_logo.png"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_poseidon_logo.png.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-xxxhdpi/poseidon_logo.png"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_poseidon_logo.png.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-hdpi/poseidon_logo.png"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_poseidon_logo.png.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-xhdpi/poseidon_logo.png"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_poseidon_logo.png.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-xhdpi/poseidon_logo.png"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_poseidon_logo.png.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-xxhdpi/poseidon_logo.png"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-mdpi_poseidon_logo.png.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-mdpi/poseidon_logo.png"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/font_comfortaa_light.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/font/comfortaa_light.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/font_comfortaa_light.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/font/comfortaa_light.xml"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_poseidon_logo.png.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-xxxhdpi/poseidon_logo.png"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_poseidon_logo.png.flat",
-        "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/mipmap-xxhdpi/poseidon_logo.png"
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     }
 ]

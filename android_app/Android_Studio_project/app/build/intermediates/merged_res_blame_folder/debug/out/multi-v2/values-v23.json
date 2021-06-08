@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-2/files-2.1/5413a955c1953af4387a26a1b60736ad/cardview-1.0.0/res/values-v23/values-v23.xml",

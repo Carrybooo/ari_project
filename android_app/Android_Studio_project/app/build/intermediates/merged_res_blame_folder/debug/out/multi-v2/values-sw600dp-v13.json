@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-2/files-2.1/88b71d98561cbc912c37c108747188fc/appcompat-1.3.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

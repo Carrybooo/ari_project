@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.core:core-ktx:1.5.0] /root/.gradle/caches/transforms-2/files-2.1/770c76cda88ece5b6b25be72b4da9c5b/core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.3.0] /root/.gradle/caches/transforms-2/files-2.1/811102451931207f871e92538b595a2c/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /root/.gradle/caches/transforms-2/files-2.1/e48a24436aaa3a6c7dadbf74d4a4c722/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
@@ -41,31 +41,31 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /root/.gradle/caches/tran
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/999da053dbe1cbe49eae6667012e4ef0/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/7ce721e1ecc913e1e08d8bf754f81627/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/3e45aef9067964c22f464ac3991899b2/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:4:5-38
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:4:5-38
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:6:5-64
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:6:5-64
 	android:name
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:6:22-62
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:6:22-62
 application
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:8:5-25:19
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:8:5-25:19
 MERGED from [com.google.android.material:material:1.3.0] /root/.gradle/caches/transforms-2/files-2.1/811102451931207f871e92538b595a2c/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] /root/.gradle/caches/transforms-2/files-2.1/811102451931207f871e92538b595a2c/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /root/.gradle/caches/transforms-2/files-2.1/e48a24436aaa3a6c7dadbf74d4a4c722/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -77,43 +77,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /root/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /root/.gradle/caches/transforms-2/files-2.1/bc19be4818a620e138c87490bec2577c/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:11:9-41
 	tools:ignore
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:15:9-35
 	android:roundIcon
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:14:9-49
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:14:9-49
 activity#com.example.ari_project.MainActivity
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:16:9-21:20
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:16:9-21:20
 	android:name
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:16:19-47
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:17:13-20:29
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:19:27-74
 meta-data#preloaded_fonts
-ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:22:9-24:57
+ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:22:9-24:57
 	android:resource
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:24:13-54
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:24:13-54
 	android:name
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml:23:13-43
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml:23:13-43
 uses-sdk
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 MERGED from [androidx.core:core-ktx:1.5.0] /root/.gradle/caches/transforms-2/files-2.1/770c76cda88ece5b6b25be72b4da9c5b/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.5.0] /root/.gradle/caches/transforms-2/files-2.1/770c76cda88ece5b6b25be72b4da9c5b/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.3.0] /root/.gradle/caches/transforms-2/files-2.1/811102451931207f871e92538b595a2c/material-1.3.0/AndroidManifest.xml:20:5-44
@@ -188,13 +188,13 @@ MERGED from [androidx.print:print:1.0.0] /root/.gradle/caches/transforms-2/files
 MERGED from [androidx.print:print:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/7ce721e1ecc913e1e08d8bf754f81627/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/3e45aef9067964c22f464ac3991899b2/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/3e45aef9067964c22f464ac3991899b2/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
-		INJECTED from /home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		ADDED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml
+		INJECTED from /home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/AndroidManifest.xml

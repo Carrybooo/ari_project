@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/Root/Documents/ARI_Project/Android_Studio_project/app/src/main/res/values-night/themes.xml",
+                    "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
