@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ARI_Project</string>
+    <string name="poseidon_logo">ARI_Project</string>
+    <string name="scan_button">SCANNER</string>
+    <string name="scan_ID">Lecture en cours...</string>
+</resources>
