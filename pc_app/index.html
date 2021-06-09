@@ -1,0 +1,43 @@
+<!Doctype html>
+<?php
+	session_start();
+	?>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+	<meta charset="utf-8"/>
+<title>Poseidon</title>
+</head>
+    <body style='background:#fff;'>
+        <div id="content">
+            
+            <a href='principale.php?deconnexion=true'><span>Déconnexion</span></a>
+            
+            <!-- tester si l'utilisateur est connecté -->
+            <?php
+                session_start();
+                if(isset($_GET['deconnexion']))
+                { 
+                   if($_GET['deconnexion']==true)
+                   {  
+                      session_unset();
+                      header("location:login.php");
+                   }
+                }
+		<?php
+		if ((isset($_GET['page']))&&(!empty($_GET['page'])))
+			{
+			if($_GET['page']=="listelem")
+					{
+					include_once('Vues/HtmlPhp/Affielement.php');
+					}
+			}	
+		//include_once('Vues\PHP\header.html');
+		include_once('Vues/projet.html');
+		//include_once('Vues\PHP\footer.html');
+	
+}
+	?>
+</div>
+</body>
+</html>
