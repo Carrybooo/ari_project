@@ -3,4 +3,29 @@
     <string name="poseidon_logo">ARI_Project</string>
     <string name="scan_button">SCANNER</string>
     <string name="scan_ID">Lecture en cours...</string>
+    //1er ecran si scan d'un ARI
+    <string name="consultation_button_ari">Consultation</string>
+    <string name="entretien_button_ari">Entretien</string>
+    <string name="affectation_button_ari">Affectation</string>
+    //1er ecran si scan d'un compresseur
+    <string name="consultation_button_comp">Consultation</string>
+    <string name="entretien_button_comp">Entretien</string>
+    //Ecran "menu d'entretien" pour ARI
+    <string name="controle_button_ari">Contrôle</string>
+    <string name="gonflage_button_ari">Gonflage</string>
+    <string name="reparations_button_ari">Réparations</string>
+    //Ecran"Menu de contrôle" pour ARI
+    <string name="historique_controle_ari">Historique</string>
+    <string name="effect_button_ari">Effectuer le contrôle</string>
+    //Ecran "Menu de réparations" pour ARI
+    <string name="historique_repa_ari">Historique</string>
+    <string name="prog_repa_ari">Programmer une réparation</string>
+    <string name="effect_repa_ari">Effectuer une réparation</string>
+    //Ecran "Menu de gonflage" pour ARI
+    <string name="box_oui_ari">OUI</string>
+    <string name="box_non_ari">NON</string>
+    <string name="validation_gonflage">Valider</string>
+    //Ecran "Menu de validation du gonflage" pour ARI
+    <string name="texte_validation">Modification bien prise en compte !</string>
+
 </resources>
