@@ -1,6 +1,6 @@
-<!--?php
+<?php
 session_start();
-?-->
+?>
 <doctype html>
 <html>
 <head>
@@ -21,6 +21,8 @@ session_start();
 				echo '<b>Reparation : </b>'.$element['Réparation'].'<br/>';
 				echo '<b>Controle : </b>'.$element['Contrôle'].'<br/>';
 				echo '<b>Utilisation : </b>'.$element['Utilisation'].'<br/>';
+				echo '<b>Vehicule : </b>'.$element['Vehicule'].'<br/>';
+
 			}
 			unset($_SESSION['listAri']);
 		}

@@ -1,6 +1,6 @@
-<!--?php
+<?php
 session_start();
-?-->
+?>
 <doctype html>
 <html>
 <head>
@@ -15,7 +15,7 @@ session_start();
 		{
 			foreach($_SESSION['listRep'] as $element)
 			{
-				echo '<b>Identifiant  : </b>'.$element['IDRepa'].'<br/>';
+				echo '<b>Identifiant  : </b>'.$element['ID'].'<br/>';
 				echo '<b>Reparation en demande : </b>'.$element['En demande'].'<br/>';
 				echo '<b>Reparation prévue : </b>'.$element['Prévue'].'<br/>';
 				echo '<b>Reparation en cours : </b>'.$element['En cours'].'<br/>';

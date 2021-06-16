@@ -1,5 +1,4 @@
  <?php 
-Session_start();
 include_once('../../Modele/requete.php');
 $_SESSION['Listelem']=Listelem();
 if (!empty($_SESSION['Listelem']))

@@ -4,8 +4,8 @@
 
 	try
 	{
-		//$bdd=new PDO('mysql:host=localhost;dbname=autour2laflamme','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
-		$bdd=new PDO('mysql:host=http://phpmyadmin.istic.univ-rennes1.fr/phpmyadmin/;dbname=base_16020326','user_16020326','alijoua',array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf-8'));
+		$bdd=new PDO('mysql:host=localhost;dbname=Poseidon','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
+		//$bdd=new PDO('mysql:host=http://phpmyadmin.istic.univ-rennes1.fr/phpmyadmin/;dbname=base_16020326','user_16020326','alijoua',array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf-8'));
 	}
 	catch(Exception $e)
 	{

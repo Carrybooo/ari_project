@@ -1,5 +1,4 @@
 <?php 
-Session_start();
 include_once('../../Modele/requete.php');
 $_SESSION['listContr']=listContr();
 if(!empty($_SESSION['listContr']))

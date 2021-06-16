@@ -7,7 +7,7 @@
 	</head>
 	<body>
 <?php
-//session_start();
+session_start();
 
 include_once('../../Controleur/requet6.php');
 	echo "<h3>Liste de tout les elements</h3>";

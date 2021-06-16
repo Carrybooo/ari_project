@@ -1,7 +1,7 @@
-<!--php
+<?php
 session_start();
-?-->
-<!doctype html>
+?>
+<doctype html>
 <html>
 <head>
 	<title>Liste des Compresseurs</title>
@@ -16,11 +16,12 @@ session_start();
 			foreach($_SESSION['listComp'] as $element)
 			{
 				echo '<b>Identifiant : </b>'.$element['ID'].'<br/>';
-				echo '<b>Etat : </b>'.$element['Etat'].'<br/>';
-				echo '<b>Lieu de Stock : </b>'.$element['Lieu de stock'].'<br/>';
+				echo '<b>Fonctionnel : </b>'.$element['Fonctionnel'].'<br/>';
+				echo '<b>Lieu de stock : </b>'.$element['Lieu de stock'].'<br/>';
 				echo '<b>Reparation : </b>'.$element['Réparation'].'<br/>';
-				echo '<b>Controle : </b>'.$element['Contrôle'].'<br/>';
+				echo '<b>Contrôles : </b>'.$element['Contrôles'].'<br/>';
 				echo '<b>Utilisation : </b>'.$element['Utilisation'].'<br/>';
+				echo '<b>Vehicule : </b>'.$element['Vehicule'].'<br/>';
 			}
 			unset($_SESSION['ListComp']);
 		} 

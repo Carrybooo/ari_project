@@ -1,17 +1,17 @@
 <?php 
-Session_start();
 include_once('../../Modele/requete.php');
 $_SESSION['listComp']=listComp();
 if(!empty($_SESSION['listComp']))
 {
-	foreach($_SESSION['listComp'] as $cle=>$art)
+	foreach($_SESSION['listComp'] as $cle=>$element)
 	{
-		$_SESSION['listComp'][$cle]['ID']=htmlspecialchars($art['ID']);
-		$_SESSION['listComp'][$cle]['Etat Gonflage']=htmlspecialchars($art['Etat Gonflage']);
-		$_SESSION['listComp'][$cle]['Lieu de Stock']=htmlspecialchars($art['Lieu de Stock']);
-		$_SESSION['listComp'][$cle]['Réparation']=htmlspecialchars($art['Réparation']);
-		$_SESSION['listComp'][$cle]['Contrôle']=htmlspecialchars($art['Contrôle']);
-		$_SESSION['listComp'][$cle]['Utilisation']=htmlspecialchars($art['Utilisation']);
+		$_SESSION['listComp'][$cle]['ID']=htmlspecialchars($element['ID']);
+		$_SESSION['listComp'][$cle]['Fonctionnel']=htmlspecialchars($element['Fonctionnel']);
+		$_SESSION['listComp'][$cle]['Lieu de stock']=htmlspecialchars($element['Lieu de stock']);
+		$_SESSION['listComp'][$cle]['Réparation']=htmlspecialchars($element['Réparation']);
+		$_SESSION['listComp'][$cle]['Contrôles']=htmlspecialchars($element['Contrôles']);
+		$_SESSION['listComp'][$cle]['Utilisation']=htmlspecialchars($element['Utilisation']);
+		$_SESSION['listComp'][$cle]['Vehicule']=htmlspecialchars($element['Vehicule']);
 	}
 }
 //header("location:../../index.php?page=listComp");
