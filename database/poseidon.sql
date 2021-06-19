@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 09 juin 2021 à 14:23
+-- Généré le : sam. 19 juin 2021 à 18:31
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -29,20 +29,20 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `ari`;
 CREATE TABLE IF NOT EXISTS `ari` (
-  `ID` text NOT NULL,
-  `Etat Gonflage` tinyint(1) NOT NULL,
-  `Lieu de stock` text NOT NULL,
-  `Réparation` date DEFAULT NULL,
-  `Contrôle` date DEFAULT NULL,
-  `Utilisation` tinyint(1) NOT NULL,
-  `Vehicule` text
+  `id` text NOT NULL,
+  `etat_gonflage` tinyint(1) NOT NULL,
+  `lieu_stock` text NOT NULL,
+  `reparation` date DEFAULT NULL,
+  `controle` date DEFAULT NULL,
+  `utilisation` tinyint(1) NOT NULL,
+  `vehicule` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant tous les ARI / dernier controle / reparation';
 
 --
 -- Déchargement des données de la table `ari`
 --
 
-INSERT INTO `ari` (`ID`, `Etat Gonflage`, `Lieu de stock`, `Réparation`, `Contrôle`, `Utilisation`, `Vehicule`) VALUES
+INSERT INTO `ari` (`id`, `etat_gonflage`, `lieu_stock`, `reparation`, `controle`, `utilisation`, `vehicule`) VALUES
 ('ARI10', 0, 'CS10', '2021-06-09', '2021-06-09', 1, NULL),
 ('ARI11', 0, 'CS10', '2021-06-09', '2021-06-09', 0, NULL),
 ('ARI12', 0, 'CS10', '2021-06-09', '2021-06-09', 0, 'V10'),
@@ -56,20 +56,20 @@ INSERT INTO `ari` (`ID`, `Etat Gonflage`, `Lieu de stock`, `Réparation`, `Contr
 
 DROP TABLE IF EXISTS `compresseurs`;
 CREATE TABLE IF NOT EXISTS `compresseurs` (
-  `ID` text NOT NULL,
-  `Fonctionnel` tinyint(1) NOT NULL,
-  `Lieu de stock` text NOT NULL,
-  `Réparation` date DEFAULT NULL,
-  `Contrôles` date DEFAULT NULL,
-  `Utilisation` tinyint(1) NOT NULL,
-  `Vehicule` text
+  `id` text NOT NULL,
+  `fonctionnel` tinyint(1) NOT NULL,
+  `lieu_stock` text NOT NULL,
+  `reparation` date DEFAULT NULL,
+  `controle` date DEFAULT NULL,
+  `utilisation` tinyint(1) NOT NULL,
+  `vehicule` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Recensement des compresseurs / dernier controle / reparation';
 
 --
 -- Déchargement des données de la table `compresseurs`
 --
 
-INSERT INTO `compresseurs` (`ID`, `Fonctionnel`, `Lieu de stock`, `Réparation`, `Contrôles`, `Utilisation`, `Vehicule`) VALUES
+INSERT INTO `compresseurs` (`id`, `fonctionnel`, `lieu_stock`, `reparation`, `controle`, `utilisation`, `vehicule`) VALUES
 ('CP10', 0, 'CS11', NULL, NULL, 1, NULL),
 ('CP11', 0, 'CS12', NULL, '0000-00-00', 1, NULL),
 ('CP12', 0, 'CS13', NULL, '2021-06-09', 1, 'V12');
@@ -82,16 +82,16 @@ INSERT INTO `compresseurs` (`ID`, `Fonctionnel`, `Lieu de stock`, `Réparation`,
 
 DROP TABLE IF EXISTS `controlehistorique`;
 CREATE TABLE IF NOT EXISTS `controlehistorique` (
-  `ID` text NOT NULL,
-  `Date` date NOT NULL,
-  `Executeur` text NOT NULL
+  `id` text NOT NULL,
+  `date` date NOT NULL,
+  `executeur` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `controlehistorique`
 --
 
-INSERT INTO `controlehistorique` (`ID`, `Date`, `Executeur`) VALUES
+INSERT INTO `controlehistorique` (`id`, `date`, `executeur`) VALUES
 ('ARI13', '2021-06-02', 'bramone'),
 ('CP12', '2021-06-03', 'bramone');
 
@@ -103,16 +103,16 @@ INSERT INTO `controlehistorique` (`ID`, `Date`, `Executeur`) VALUES
 
 DROP TABLE IF EXISTS `controleprevu`;
 CREATE TABLE IF NOT EXISTS `controleprevu` (
-  `ID` text NOT NULL,
-  `Date` date NOT NULL,
-  `Executeur` text NOT NULL
+  `id` text NOT NULL,
+  `date` date NOT NULL,
+  `executeur` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `controleprevu`
 --
 
-INSERT INTO `controleprevu` (`ID`, `Date`, `Executeur`) VALUES
+INSERT INTO `controleprevu` (`id`, `date`, `executeur`) VALUES
 ('CP11', '2021-06-22', 'bramone'),
 ('ARI13', '2021-06-24', 'bramone'),
 ('ARI10', '2021-06-27', 'bramone');
@@ -125,15 +125,15 @@ INSERT INTO `controleprevu` (`ID`, `Date`, `Executeur`) VALUES
 
 DROP TABLE IF EXISTS `elements`;
 CREATE TABLE IF NOT EXISTS `elements` (
-  `Materiel` text NOT NULL,
-  `ID` text NOT NULL
+  `materiel` text NOT NULL,
+  `id` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant tout le matériel';
 
 --
 -- Déchargement des données de la table `elements`
 --
 
-INSERT INTO `elements` (`Materiel`, `ID`) VALUES
+INSERT INTO `elements` (`materiel`, `id`) VALUES
 ('ARI', 'ARI10'),
 ('ARI', 'ARI11'),
 ('ARI', 'ARI12'),
@@ -146,10 +146,24 @@ INSERT INTO `elements` (`Materiel`, `ID`) VALUES
 ('Centre', 'CS12'),
 ('Centre', 'CS11'),
 ('Centre', 'CS13'),
-('Vehicule', 'V10'),
-('Vehicule', 'V11'),
-('Vehicule', 'V12'),
-('Vehicule', 'V13');
+('vehicule', 'V10'),
+('vehicule', 'V11'),
+('vehicule', 'V12'),
+('vehicule', 'V13');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `historiquegonflage`
+--
+
+DROP TABLE IF EXISTS `historiquegonflage`;
+CREATE TABLE IF NOT EXISTS `historiquegonflage` (
+  `ari` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `date` date NOT NULL,
+  `lieu` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `compresseur` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -159,15 +173,15 @@ INSERT INTO `elements` (`Materiel`, `ID`) VALUES
 
 DROP TABLE IF EXISTS `historiquerepa`;
 CREATE TABLE IF NOT EXISTS `historiquerepa` (
-  `ID` text NOT NULL,
-  `Date` date NOT NULL
+  `id` text NOT NULL,
+  `date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `historiquerepa`
 --
 
-INSERT INTO `historiquerepa` (`ID`, `Date`) VALUES
+INSERT INTO `historiquerepa` (`id`, `date`) VALUES
 ('ARI11', '2021-06-01'),
 ('ARI13', '2021-06-05'),
 ('ARI12', '2021-06-09');
@@ -180,10 +194,10 @@ INSERT INTO `historiquerepa` (`ID`, `Date`) VALUES
 
 DROP TABLE IF EXISTS `repaencours`;
 CREATE TABLE IF NOT EXISTS `repaencours` (
-  `ID` text NOT NULL,
-  `Lieu de stock` text NOT NULL,
-  `Executeur` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table des réparations en cours';
+  `id` text NOT NULL,
+  `lieu_stock` text NOT NULL,
+  `executeur` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table des reparations en cours';
 
 -- --------------------------------------------------------
 
@@ -193,10 +207,10 @@ CREATE TABLE IF NOT EXISTS `repaencours` (
 
 DROP TABLE IF EXISTS `repaprevuee`;
 CREATE TABLE IF NOT EXISTS `repaprevuee` (
-  `ID` text NOT NULL,
-  `Executeur` text NOT NULL,
-  `Lieu` text NOT NULL,
-  `Date` date NOT NULL
+  `id` text NOT NULL,
+  `executeur` text NOT NULL,
+  `lieu` text NOT NULL,
+  `date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -207,18 +221,18 @@ CREATE TABLE IF NOT EXISTS `repaprevuee` (
 
 DROP TABLE IF EXISTS `reparations`;
 CREATE TABLE IF NOT EXISTS `reparations` (
-  `ID` text NOT NULL,
-  `En demande` tinyint(1) NOT NULL,
-  `Prévue` tinyint(1) NOT NULL,
-  `En cours` tinyint(1) NOT NULL,
-  `Terminée` tinyint(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant toutes les réparations';
+  `id` text NOT NULL,
+  `en_demande` tinyint(1) NOT NULL,
+  `prevue` tinyint(1) NOT NULL,
+  `en_cours` tinyint(1) NOT NULL,
+  `terminee` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant toutes les reparations';
 
 --
 -- Déchargement des données de la table `reparations`
 --
 
-INSERT INTO `reparations` (`ID`, `En demande`, `Prévue`, `En cours`, `Terminée`) VALUES
+INSERT INTO `reparations` (`id`, `en_demande`, `prevue`, `en_cours`, `terminee`) VALUES
 ('ARI14', 1, 1, 1, 0),
 ('ARI13', 1, 1, 0, 0);
 
@@ -230,8 +244,8 @@ INSERT INTO `reparations` (`ID`, `En demande`, `Prévue`, `En cours`, `Terminée
 
 DROP TABLE IF EXISTS `utilisateurs`;
 CREATE TABLE IF NOT EXISTS `utilisateurs` (
-  `Identifiant` text NOT NULL,
-  `Password` text NOT NULL,
+  `identifiant` text NOT NULL,
+  `password` text NOT NULL,
   `Admin` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -239,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`Identifiant`, `Password`, `Admin`) VALUES
+INSERT INTO `utilisateurs` (`identifiant`, `password`, `Admin`) VALUES
 ('bramone', 'bramonekek', 0),
 ('ajoua', 'ajoualel', 1);
 COMMIT;
