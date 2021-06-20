@@ -1070,20 +1070,33 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="affectation_button_ari">Affectation</string>
     <string name="app_name">ARI_Project</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an action that a user of an accessibility service can perform to expand a bottomsheet halfway to its full height. [CHAR LIMIT=25]" name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="box_non_ari">NON</string>
+    <string name="box_oui_ari">OUI</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="consultation_button_ari">Consultation</string>
+    <string name="consultation_button_comp">Consultation</string>
+    <string name="controle_button_ari">Contrôle</string>
+    <string name="effect_button_ari">Effectuer le contrôle</string>
+    <string name="effect_repa_ari">Effectuer une réparation</string>
+    <string name="entretien_button_ari">Entretien</string>
+    <string name="entretien_button_comp">Entretien</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="gonflage_button_ari">Gonflage</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="historique_controle_ari">Historique</string>
+    <string name="historique_repa_ari">Historique</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_display_divider" translatable="false">:</string>
@@ -1142,10 +1155,14 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="poseidon_logo">ARI_Project</string>
+    <string name="prog_repa_ari">Programmer une réparation</string>
+    <string name="reparations_button_ari">Réparations</string>
     <string name="scan_ID">Lecture en cours...</string>
     <string name="scan_button">SCANNER</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="texte_validation">Modification bien prise en compte !</string>
+    <string name="validation_gonflage">Valider</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AndroidThemeColorAccentYellow" ns2:ignore="NewApi">

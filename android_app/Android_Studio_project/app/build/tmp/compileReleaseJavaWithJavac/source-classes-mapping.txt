@@ -1,2 +1,0 @@
-com/example/ari_project/BuildConfig.java
- com.example.ari_project.BuildConfig
