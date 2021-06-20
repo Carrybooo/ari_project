@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_reparations_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_reparations_ari.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_entretien_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_entretien_ari.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_comp.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_comp.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_controle_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_controle_ari.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_ari.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_gonflage_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_gonflage_ari.xml"
+    },
+    {
+        "merged": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menu_validation_gonflage_ari.xml",
+        "source": "/home/Root/Bureau/GIT/ari_project/android_app/Android_Studio_project/app/src/main/res/layout/menu_validation_gonflage_ari.xml"
+    }
+]

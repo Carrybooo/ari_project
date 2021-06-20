@@ -4,6 +4,8 @@
     <string name="scan_button">SCANNER</string>
     <string name="scan_ID">Lecture en cours...</string>
 
+    //ecran lecteur QR
+    <string name="confirm_read_button">Confirmer</string>
     //1er ecran si scan d'un ARI
     <string name="consultation_button_ari">Consultation</string>
     <string name="entretien_button_ari">Entretien</string>

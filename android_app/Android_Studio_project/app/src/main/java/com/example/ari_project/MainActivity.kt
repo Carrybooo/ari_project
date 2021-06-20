@@ -1,8 +1,10 @@
 package com.example.ari_project
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -10,13 +12,14 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.budiyev.android.codescanner.*
 
-private const val CAMERA_REQUEST_CODE = 101
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var scanner_view: CodeScannerView
     private lateinit var tv_textView: TextView
+    private val CAMERA_REQUEST_CODE = 101
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +30,13 @@ class MainActivity : AppCompatActivity() {
 
         setupPermissions()
         codeScanner()
+
+        val confirmButton = findViewById<Button>(R.id.confirmButton) as Button
+
+        confirmButton.setOnClickListener{
+            val intent= Intent(confirmButton.context, MainActivity::class.java)//TODO() A CHANGER
+            startActivity(intent);
+        }
     }
 
     private fun codeScanner() {

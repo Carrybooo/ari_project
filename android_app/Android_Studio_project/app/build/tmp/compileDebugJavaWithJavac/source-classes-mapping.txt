@@ -4,10 +4,10 @@ com/example/ari_project/BuildConfig.java
  com.example.ari_project.BuildConfig
 com/example/ari_project/databinding/MenuControleAriBinding.java
  com.example.ari_project.databinding.MenuControleAriBinding
-com/example/ari_project/databinding/MenuCompBinding.java
- com.example.ari_project.databinding.MenuCompBinding
 com/example/ari_project/databinding/MenuValidationGonflageAriBinding.java
  com.example.ari_project.databinding.MenuValidationGonflageAriBinding
+com/example/ari_project/databinding/MenuCompBinding.java
+ com.example.ari_project.databinding.MenuCompBinding
 com/example/ari_project/databinding/MenuReparationsAriBinding.java
  com.example.ari_project.databinding.MenuReparationsAriBinding
 com/example/ari_project/databinding/MenuEntretienAriBinding.java

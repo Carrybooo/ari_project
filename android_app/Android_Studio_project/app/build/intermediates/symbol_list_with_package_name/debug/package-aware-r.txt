@@ -1833,6 +1833,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id confirmButton
 id confirm_button
 id container
 id content
@@ -2350,6 +2351,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string confirm_read_button
 string consultation_button_ari
 string consultation_button_comp
 string controle_button_ari
