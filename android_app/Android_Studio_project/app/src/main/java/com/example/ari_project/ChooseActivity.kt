@@ -22,7 +22,7 @@ class ChooseActivity : AppCompatActivity() {
         setContentView(ariBinding.root)
         val consultButton = findViewById<Button>(R.id.button)
         val entretButton = findViewById<Button>(R.id.button2)
-        //val affectButton = findViewById<Button>(R.id.button3)
+        val affectButton = findViewById<Button>(R.id.button3)
 
         //scanID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
@@ -40,10 +40,10 @@ class ChooseActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*affectButton.setOnClickListener {
-            val intent = Intent(affectButton.context, MenuAffectationAriActivity::class.java)
+        affectButton.setOnClickListener {
+            val intent = Intent(affectButton.context, MainActivity::class.java)
             startActivity(intent)
-        }*/
+        }
 
         title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }
