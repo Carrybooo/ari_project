@@ -11,8 +11,21 @@ class MenuEntretienAriActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //declarations éléments ---->
         entretienAriBinding = MenuEntretienAriBinding.inflate(layoutInflater)
         setContentView(entretienAriBinding.root)
 
+
+        //scanID
+        val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
+
+        //listeners
+
+
+
+
+
+
+        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }
 }

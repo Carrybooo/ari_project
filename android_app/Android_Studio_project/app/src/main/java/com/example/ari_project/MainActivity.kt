@@ -18,18 +18,18 @@ import com.budiyev.android.codescanner.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
-    private lateinit var scanner_view: CodeScannerView
-    private lateinit var tv_textView: TextView
+    private lateinit var scannerView: CodeScannerView
+    private lateinit var scanID: TextView
 
-    private val CAMERA_REQUEST_CODE = 101
+    private val cameraRequestCode = 101
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tv_textView = findViewById(R.id.textView)
-        scanner_view = findViewById(R.id.scanner_view)
+        scanID = findViewById(R.id.textView)
+        scannerView = findViewById(R.id.scanner_view)
 
         setupPermissions()
         codeScanner()
@@ -37,13 +37,19 @@ class MainActivity : AppCompatActivity() {
         val confirmButton = findViewById<Button>(R.id.confirmButton)
 
         confirmButton.setOnClickListener{
-            val intent= Intent(confirmButton.context, ChooseActivity::class.java)//TODO() A CHANGER
-            startActivity(intent)
+            if(scanID.text.toString()=="Lecture en cours..."){
+                Toast.makeText(this,"Vous devez scanner un ID pour confirmer.",
+                    Toast.LENGTH_SHORT).show()
+            }else {
+                val intent = Intent(this, ChooseActivity::class.java)//TODO() A CHANGER
+                intent.putExtra("id", scanID.text.toString())
+                startActivity(intent)
+            }
         }
     }
 
     private fun codeScanner() {
-        codeScanner = CodeScanner(this, scanner_view)
+        codeScanner = CodeScanner(this, scannerView)
 
         codeScanner.apply {
             camera = CodeScanner.CAMERA_BACK
@@ -57,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
             decodeCallback = DecodeCallback {
                 runOnUiThread {
-                    tv_textView.text = it.text
+                    scanID.text = it.text
                 }
             }
 
@@ -68,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        scanner_view.setOnClickListener {
+        scannerView.setOnClickListener {
             codeScanner.startPreview()
         }
     }
@@ -98,7 +104,7 @@ class MainActivity : AppCompatActivity() {
         ActivityCompat.requestPermissions(
             this,
             arrayOf(android.Manifest.permission.CAMERA),
-            CAMERA_REQUEST_CODE
+            cameraRequestCode
         )
     }
 
@@ -109,7 +115,7 @@ class MainActivity : AppCompatActivity() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
-            CAMERA_REQUEST_CODE -> {
+            cameraRequestCode -> {
                 if (grantResults.isEmpty() || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(
                         this,

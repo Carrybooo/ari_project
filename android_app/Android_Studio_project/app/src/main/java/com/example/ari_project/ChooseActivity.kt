@@ -1,3 +1,5 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.example.ari_project
 
 import android.content.Intent
@@ -5,31 +7,36 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ari_project.databinding.MenuAriBinding
-import com.example.ari_project.databinding.MenuEntretienAriBinding
 
 class ChooseActivity : AppCompatActivity() {
 
     private lateinit var ariBinding: MenuAriBinding
 
-    val consultButton = findViewById<Button>(R.id.button)
-    val entretButton = findViewById<Button>(R.id.button2)
-    //val affectButton = findViewById<Button>(R.id.button3)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //declarations éléments ---->
         ariBinding = MenuAriBinding.inflate(layoutInflater)
         setContentView(ariBinding.root)
+        val consultButton = findViewById<Button>(R.id.button)
+        val entretButton = findViewById<Button>(R.id.button2)
+        //val affectButton = findViewById<Button>(R.id.button3)
 
+        //scanID
+        val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
-
+        //listeners
         consultButton.setOnClickListener {
-            val intent = Intent(consultButton.context, MainActivity::class.java) //TODO() Créer la vu de la consultation
+            val intent = Intent(this, MainActivity::class.java) //TODO() TEST ICI, Créer la vu de la consultation à la place
+            intent.putExtra("id", scanID)
             startActivity(intent)
         }
 
         entretButton.setOnClickListener {
-            val intent = Intent(entretButton.context, MenuEntretienAriActivity::class.java)
+            val intent = Intent(this, MenuEntretienAriActivity::class.java)
+            intent.putExtra("id", scanID)
             startActivity(intent)
         }
 
@@ -38,6 +45,6 @@ class ChooseActivity : AppCompatActivity() {
             startActivity(intent)
         }*/
 
-        title = getString(R.string.ID_equipe) + " " //TODO() Rajouter l'ID de l'équipement
+        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }
 }
