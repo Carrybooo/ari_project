@@ -3,6 +3,7 @@
     <string name="poseidon_logo">ARI_Project</string>
     <string name="scan_button">SCANNER</string>
     <string name="scan_ID">Lecture en cours...</string>
+    <string name="ID_equipe">ID de l\'équipement :</string>
 
     //ecran lecteur QR
     <string name="confirm_read_button">Confirmer</string>
