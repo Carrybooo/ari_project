@@ -1,3 +1,5 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.example.ari_project
 
 import android.content.Intent
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var codeScanner: CodeScanner
     private lateinit var scanner_view: CodeScannerView
     private lateinit var tv_textView: TextView
+
     private val CAMERA_REQUEST_CODE = 101
 
 
@@ -31,11 +34,11 @@ class MainActivity : AppCompatActivity() {
         setupPermissions()
         codeScanner()
 
-        val confirmButton = findViewById<Button>(R.id.confirmButton) as Button
+        val confirmButton = findViewById<Button>(R.id.confirmButton)
 
         confirmButton.setOnClickListener{
-            val intent= Intent(confirmButton.context, MainActivity::class.java)//TODO() A CHANGER
-            startActivity(intent);
+            val intent= Intent(confirmButton.context, ChooseActivity::class.java)//TODO() A CHANGER
+            startActivity(intent)
         }
     }
 
