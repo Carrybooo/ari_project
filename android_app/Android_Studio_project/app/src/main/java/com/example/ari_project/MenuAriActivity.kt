@@ -42,6 +42,7 @@ class MenuAriActivity : AppCompatActivity() {
 
         affectButton.setOnClickListener {
             val intent = Intent(affectButton.context, MenuAffectationAriActivity::class.java)
+            intent.putExtra("id", scanID)
             startActivity(intent)
         }
 
