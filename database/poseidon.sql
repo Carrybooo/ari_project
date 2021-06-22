@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 19 juin 2021 à 18:31
+-- Généré le : mar. 22 juin 2021 à 14:59
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -31,22 +31,18 @@ DROP TABLE IF EXISTS `ari`;
 CREATE TABLE IF NOT EXISTS `ari` (
   `id` text NOT NULL,
   `etat_gonflage` tinyint(1) NOT NULL,
-  `lieu_stock` text NOT NULL,
-  `reparation` date DEFAULT NULL,
-  `controle` date DEFAULT NULL,
-  `utilisation` tinyint(1) NOT NULL,
-  `vehicule` text
+  `lieu_stock` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant tous les ARI / dernier controle / reparation';
 
 --
 -- Déchargement des données de la table `ari`
 --
 
-INSERT INTO `ari` (`id`, `etat_gonflage`, `lieu_stock`, `reparation`, `controle`, `utilisation`, `vehicule`) VALUES
-('ARI10', 0, 'CS10', '2021-06-09', '2021-06-09', 1, NULL),
-('ARI11', 0, 'CS10', '2021-06-09', '2021-06-09', 0, NULL),
-('ARI12', 0, 'CS10', '2021-06-09', '2021-06-09', 0, 'V10'),
-('ARI14', 0, 'CS12', NULL, NULL, 1, 'V12');
+INSERT INTO `ari` (`id`, `etat_gonflage`, `lieu_stock`) VALUES
+('ARI10', 0, 'CS10'),
+('ARI11', 0, 'CS10'),
+('ARI12', 0, 'CS10'),
+('ARI14', 0, 'CS12');
 
 -- --------------------------------------------------------
 
@@ -58,21 +54,17 @@ DROP TABLE IF EXISTS `compresseurs`;
 CREATE TABLE IF NOT EXISTS `compresseurs` (
   `id` text NOT NULL,
   `fonctionnel` tinyint(1) NOT NULL,
-  `lieu_stock` text NOT NULL,
-  `reparation` date DEFAULT NULL,
-  `controle` date DEFAULT NULL,
-  `utilisation` tinyint(1) NOT NULL,
-  `vehicule` text
+  `lieu_stock` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Recensement des compresseurs / dernier controle / reparation';
 
 --
 -- Déchargement des données de la table `compresseurs`
 --
 
-INSERT INTO `compresseurs` (`id`, `fonctionnel`, `lieu_stock`, `reparation`, `controle`, `utilisation`, `vehicule`) VALUES
-('CP10', 0, 'CS11', NULL, NULL, 1, NULL),
-('CP11', 0, 'CS12', NULL, '0000-00-00', 1, NULL),
-('CP12', 0, 'CS13', NULL, '2021-06-09', 1, 'V12');
+INSERT INTO `compresseurs` (`id`, `fonctionnel`, `lieu_stock`) VALUES
+('CP10', 0, 'CS11'),
+('CP11', 0, 'CS12'),
+('CP12', 0, 'CS13');
 
 -- --------------------------------------------------------
 
