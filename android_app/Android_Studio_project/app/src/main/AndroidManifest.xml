@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARI_Project"
         tools:ignore="AllowBackup">
+
         //mainActivity
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,25 +22,35 @@
             </intent-filter>
         </activity>
         //menu_ari_activity
-        <activity android:name=".MenuAriActivity"></activity>
+        <activity android:name=".MenuAriActivity">
+        </activity>
         //menu_entretien_ari
-        <activity android:name=".MenuEntretienAriActivity"></activity>
+        <activity android:name=".MenuEntretienAriActivity">
+        </activity>
         //menu_controle_ari
-        <activity android:name=".MenuControleAriActivity"></activity>
+        <activity android:name=".MenuControleAriActivity">
+        </activity>
         //menu_gonflage_ari
-        <activity android:name=".MenuGonflageAriActivity"></activity>
+        <activity android:name=".MenuGonflageAriActivity">
+        </activity>
         //menu_reparations_ari
-        <activity android:name=".MenuReparationsAriActivity"></activity>
+        <activity android:name=".MenuReparationsAriActivity">
+        </activity>
         //menu_affectation_ari
-        <activity android:name=".MenuAffectationAriActivity"></activity>
+        <activity android:name=".MenuAffectationAriActivity">
+        </activity>
         //menu_affectation_add_ari
-        <activity android:name=".MenuAffectationAddAriActivity"></activity>
+        <activity android:name=".MenuAffectationAddAriActivity">
+        </activity>
         //menu_affectation_remove_ari
-        <activity android:name=".MenuAffectationRemoveAriActivity"></activity>
+        <activity android:name=".MenuAffectationRemoveAriActivity">
+        </activity>
         //menu_consultation_ari
-        <activity android:name=".MenuConsultationAriActivity"></activity>
+        <activity android:name=".MenuConsultationAriActivity">
+        </activity>
         //menu_validation_gonflage_ari
-        <activity android:name=".MenuValidationGonflageAriActivity"></activity>
+        <activity android:name=".MenuValidationGonflageAriActivity">
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
