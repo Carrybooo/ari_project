@@ -6,10 +6,10 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/controles_button_ari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/controle_button_ari"
+        android:text="@string/controles_button_ari"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,26 +17,26 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/gonflage_button_ari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
-        android:text="@string/gonflage_button_ari"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
+        android:text="@string/gonflages_button_ari"
+        app:layout_constraintBottom_toTopOf="@+id/reparations_button_ari"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/controles_button_ari" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/reparations_button_ari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reparations_button_ari"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/controles_button_ari"
         app:layout_constraintVertical_bias="0.65999997" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
