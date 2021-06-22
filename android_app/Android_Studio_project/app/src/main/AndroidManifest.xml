@@ -20,21 +20,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //menu_consultation_ari
-        <activity android:name=".MenuAriActivity">
-        </activity>
+        //menu_ari_activity
+        <activity android:name=".MenuAriActivity"></activity>
         //menu_entretien_ari
-        <activity android:name=".MenuEntretienAriActivity">
-        </activity>
+        <activity android:name=".MenuEntretienAriActivity"></activity>
         //menu_controle_ari
-        <activity android:name=".MenuControleAriActivity">
-        </activity>
+        <activity android:name=".MenuControleAriActivity"></activity>
         //menu_gonflage_ari
-        <activity android:name=".MenuGonflageAriActivity">
-        </activity>
+        <activity android:name=".MenuGonflageAriActivity"></activity>
         //menu_reparations_ari
-        <activity android:name=".MenuReparationsAriActivity">
-        </activity>
+        <activity android:name=".MenuReparationsAriActivity"></activity>
+        //menu_affectation_ari
+        <activity android:name=".MenuAffectationAriActivity"></activity>
+        //menu_affectation_add_ari
+        <activity android:name=".MenuAffectationAddAriActivity"></activity>
+        //menu_affectation_remove_ari
+        <activity android:name=".MenuAffectationRemoveAriActivity"></activity>
+        //menu_consultation_ari
+        <activity android:name=".MenuConsultationAriActivity"></activity>
+        //menu_validation_gonflage_ari
+        <activity android:name=".MenuValidationGonflageAriActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
