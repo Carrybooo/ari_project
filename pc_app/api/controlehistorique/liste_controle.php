@@ -11,7 +11,7 @@ try {
         $dataArray[$key]['executeur'] = $donnees[$key]['executeur'];
     }
     echo json_encode(array(
-        'comp_list'=> $dataArray,
+        'contr_list'=> $dataArray,
     ));
 
 } catch (Exception $e) {
