@@ -34,4 +34,12 @@
     <string name="validation_gonflage">Valider</string>
     //Ecran "Menu de validation du gonflage" pour ARI
     <string name="texte_validation">Modification bien prise en compte !</string>
+    //Ecran "Menu affectation" pour ARI
+    <string name="affectation_add_button">Affecter</string>
+    <string name="affectation_remove_button">Retirer</string>
+    //Ecran "Menu affectation add" pour ARI
+    //RIEN : réutilisation des variables d'autres écrans
+    //Ecran "Menu affectation remove" pour ARI
+    //RIEN : réutilisation des variables d'autres écrans
+
 </resources>

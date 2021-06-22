@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/affectation_add_button"
+    <TextView
+        android:id="@+id/text_id_affect_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/affectation_add_button"
+        android:text="@string/scan_ID"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,12 +19,12 @@
         app:layout_constraintVertical_bias="0.32999998" />
 
     <Button
-        android:id="@+id/affectation_remove_button"
+        android:id="@+id/affectation_remove_confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/affectation_remove_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/affectation_add_button" />
+        app:layout_constraintTop_toBottomOf="@+id/text_id_affect_remove" />
 </androidx.constraintlayout.widget.ConstraintLayout>
