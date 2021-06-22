@@ -17,7 +17,7 @@ class MenuValidationGonflageAriActivity : AppCompatActivity(){
         validGonflage = MenuValidationGonflageAriBinding.inflate(layoutInflater)
         setContentView(validGonflage.root)
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe) + "(Validation) " + scanID //titre qui contient l'ID
     }
 
 }

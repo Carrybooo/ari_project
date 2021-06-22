@@ -50,6 +50,6 @@ class MenuEntretienAriActivity : AppCompatActivity() {
 
 
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_entretien) + " " + scanID //titre qui contient l'ID
     }
 }

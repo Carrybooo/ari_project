@@ -19,6 +19,16 @@ class MenuGonflageAriActivity : AppCompatActivity() {
         gonflageAriBinding = MenuGonflageAriBinding.inflate(layoutInflater)
         setContentView(gonflageAriBinding.root)
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        val selectedValGonflage = gonflageAriBinding.radioGroup.checkedRadioButtonId
+
+        when(selectedValGonflage){
+            R.id.radioButton -> "Oui" //Update la table avec gonflage à 1 si modif effective
+            R.id.radioButton2 -> "Non" //Update la table avec gonlfage à 0 si modif effective
+            else -> "You must check an option !" //Toast avec obligation de choisir une option
+        }
+
+
+
+        title = getString(R.string.ID_equipe_entretien) + "(Gonflage) " + scanID //titre qui contient l'ID
     }
 }

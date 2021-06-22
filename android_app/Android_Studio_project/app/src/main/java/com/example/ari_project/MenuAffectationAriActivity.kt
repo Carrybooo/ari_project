@@ -36,6 +36,6 @@ class MenuAffectationAriActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_affectation) + " " + scanID //titre qui contient l'ID
     }
 }

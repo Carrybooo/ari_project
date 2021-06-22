@@ -18,7 +18,7 @@ class MenuControleAriActivity : AppCompatActivity() {
         //scanID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_entretien) + "(Contrôle) " + scanID //titre qui contient l'ID
 
     }
 

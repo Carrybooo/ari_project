@@ -40,7 +40,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
         buttonPull = findViewById(R.id.buttonPull)
         textConsultation = findViewById(R.id.textView3)
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_consultation) + " " + scanID //titre qui contient l'ID
 
         ////////////////TRY///////////////TODO() fichier a bien clean
 

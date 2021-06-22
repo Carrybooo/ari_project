@@ -23,6 +23,6 @@ class MenuAffectationRemoveAriActivity : AppCompatActivity(){
 
         textViewID.text = scanID
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_affectation) + "(Retirer) " + scanID //titre qui contient l'ID
     }
 }

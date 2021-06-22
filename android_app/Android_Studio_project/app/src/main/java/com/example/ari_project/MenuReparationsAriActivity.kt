@@ -18,6 +18,6 @@ class MenuReparationsAriActivity : AppCompatActivity() {
         reparationsAriBinding = MenuReparationsAriBinding.inflate(layoutInflater)
         setContentView(reparationsAriBinding.root)
 
-        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_entretien) + "(Reparations) " + scanID //titre qui contient l'ID
     }
 }
