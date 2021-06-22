@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/historique_reparations_ari_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/historique_repa_ari"
@@ -17,27 +17,27 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/prog_repa_ari_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="@string/prog_repa_ari"
-        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintBottom_toTopOf="@+id/effect_repa_ari_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/historique_reparations_ari_button"
         app:layout_constraintVertical_bias="0.15" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/effect_repa_ari_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/effect_repa_ari"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/historique_reparations_ari_button"
         app:layout_constraintVertical_bias="0.65999997" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
