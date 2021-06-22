@@ -4,52 +4,77 @@
     package="com.example.ari_project">
 
     <uses-permission android:name="android.permission.CAMERA"/> <!--permission camera-->
+    <uses-permission android:name="android.permission.INTERNET" /><!--permission internet-->
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ARI_Project"
+        android:screenOrientation="portrait"
         tools:ignore="AllowBackup">
 
-        //mainActivity
-        <activity android:name=".MainActivity">
+        <!--mainActivity-->
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //menu_ari_activity
-        <activity android:name=".MenuAriActivity">
+        <!--menu_ari_activity-->
+        <activity android:name=".MenuAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_entretien_ari
-        <activity android:name=".MenuEntretienAriActivity">
+        <!--menu_entretien_ari-->
+        <activity android:name=".MenuEntretienAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_controle_ari
-        <activity android:name=".MenuControleAriActivity">
+        <!--menu_controle_ari-->
+        <activity android:name=".MenuControleAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_gonflage_ari
-        <activity android:name=".MenuGonflageAriActivity">
+        <!--menu_gonflage_ari-->
+        <activity android:name=".MenuGonflageAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_reparations_ari
-        <activity android:name=".MenuReparationsAriActivity">
+        <!--menu_reparations_ari-->
+        <activity android:name=".MenuReparationsAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_affectation_ari
-        <activity android:name=".MenuAffectationAriActivity">
+        <!--menu_affectation_ari-->
+        <activity android:name=".MenuAffectationAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_affectation_add_ari
-        <activity android:name=".MenuAffectationAddAriActivity">
+        <!--menu_affectation_add_ari-->
+        <activity android:name=".MenuAffectationAddAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_affectation_remove_ari
-        <activity android:name=".MenuAffectationRemoveAriActivity">
+        <!--menu_affectation_remove_ari-->
+        <activity android:name=".MenuAffectationRemoveAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_consultation_ari
-        <activity android:name=".MenuConsultationAriActivity">
+        <!--menu_consultation_ari-->
+        <activity android:name=".MenuConsultationAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
-        //menu_validation_gonflage_ari
-        <activity android:name=".MenuValidationGonflageAriActivity">
+        <!--menu_validation_gonflage_ari-->
+        <activity android:name=".MenuValidationGonflageAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
         <meta-data
             android:name="preloaded_fonts"
