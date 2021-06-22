@@ -2,7 +2,6 @@ package com.example.ari_project
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ari_project.databinding.MenuEntretienAriBinding
 import com.example.ari_project.databinding.MenuReparationsAriBinding
 
 class MenuReparationsAriActivity : AppCompatActivity() {
@@ -17,7 +16,8 @@ class MenuReparationsAriActivity : AppCompatActivity() {
 
         //declarations éléments ---->
         reparationsAriBinding = MenuReparationsAriBinding.inflate(layoutInflater)
-        intent.putExtra("id", scanID)
         setContentView(reparationsAriBinding.root)
+
+        title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }
 }
