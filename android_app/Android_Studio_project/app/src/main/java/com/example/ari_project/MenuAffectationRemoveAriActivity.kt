@@ -11,11 +11,11 @@ class MenuAffectationRemoveAriActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //Scan ID
-        val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
-
         affectRemove = MenuAffectationRemoveAriBinding.inflate(layoutInflater)
         setContentView(affectRemove.root)
+
+        //Scan ID
+        val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
         title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }

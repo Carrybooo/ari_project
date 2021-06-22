@@ -14,14 +14,14 @@ class MenuAffectationAriActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        affectationAriBinding = MenuAffectationAriBinding.inflate(layoutInflater)
+        setContentView(affectationAriBinding.root)
+
         val addButton = findViewById<Button>(R.id.affectation_add_button)
         val removeButton = findViewById<Button>(R.id.affectation_remove_button)
 
         //Scan ID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
-
-        affectationAriBinding = MenuAffectationAriBinding.inflate(layoutInflater)
-        setContentView(affectationAriBinding.root)
 
         //Listeners
         addButton.setOnClickListener {
@@ -35,6 +35,7 @@ class MenuAffectationAriActivity : AppCompatActivity() {
             intent.putExtra("id", scanID)
             startActivity(intent)
         }
+
         title = getString(R.string.ID_equipe) + " " + scanID //titre qui contient l'ID
     }
 }
