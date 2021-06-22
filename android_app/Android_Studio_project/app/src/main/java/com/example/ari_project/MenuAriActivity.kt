@@ -29,7 +29,7 @@ class MenuAriActivity : AppCompatActivity() {
 
         //listeners
         consultButton.setOnClickListener {
-            val intent = Intent(this, MenuConsultationAriActivity::class.java) //TODO() TEST ICI, Créer la vu de la consultation à la place
+            val intent = Intent(this, MenuConsultationAriActivity::class.java)
             intent.putExtra("id", scanID)
             startActivity(intent)
         }
@@ -41,7 +41,7 @@ class MenuAriActivity : AppCompatActivity() {
         }
 
         affectButton.setOnClickListener {
-            val intent = Intent(affectButton.context, MainActivity::class.java)
+            val intent = Intent(affectButton.context, MenuAffectationAriActivity::class.java)
             startActivity(intent)
         }
 
