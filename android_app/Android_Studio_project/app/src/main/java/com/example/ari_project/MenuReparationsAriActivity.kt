@@ -17,6 +17,7 @@ class MenuReparationsAriActivity : AppCompatActivity() {
 
         //declarations éléments ---->
         reparationsAriBinding = MenuReparationsAriBinding.inflate(layoutInflater)
+        intent.putExtra("id", scanID)
         setContentView(reparationsAriBinding.root)
     }
 }
