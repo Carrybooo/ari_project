@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Vous devez scanner un ID pour confirmer.",
                     Toast.LENGTH_SHORT).show()
             }else {
-                val intent = Intent(this, ChooseActivity::class.java)//TODO() A CHANGER
+                val intent = Intent(this, MenuAriActivity::class.java)//TODO() A CHANGER
                 intent.putExtra("id", scanID.text.toString())
                 startActivity(intent)
             }

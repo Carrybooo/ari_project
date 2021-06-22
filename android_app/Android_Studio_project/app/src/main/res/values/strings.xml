@@ -11,12 +11,15 @@
     <string name="consultation_button_ari">Consultation</string>
     <string name="entretien_button_ari">Entretien</string>
     <string name="affectation_button_ari">Affectation</string>
+    //Ecran "Menu consultation" pour ARI
+    //TODO() voir comment on met en place l'affichage des requêtes (vue scroll, recycler, fragment ?)
+    <string name="dernier_gonflage">Dernier gonflage :</string>
     //1er ecran si scan d'un compresseur
     <string name="consultation_button_comp">Consultation</string>
     <string name="entretien_button_comp">Entretien</string>
     //Ecran "menu d'entretien" pour ARI
-    <string name="controle_button_ari">Contrôle</string>
-    <string name="gonflage_button_ari">Gonflage</string>
+    <string name="controles_button_ari">Contrôles</string>
+    <string name="gonflages_button_ari">Gonflages</string>
     <string name="reparations_button_ari">Réparations</string>
     //Ecran"Menu de contrôle" pour ARI
     <string name="historique_controle_ari">Historique</string>
@@ -31,5 +34,4 @@
     <string name="validation_gonflage">Valider</string>
     //Ecran "Menu de validation du gonflage" pour ARI
     <string name="texte_validation">Modification bien prise en compte !</string>
-
 </resources>

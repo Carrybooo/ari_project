@@ -22,18 +22,18 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
         //listeners
-        //Button 6, 7 et 8 (Controle, Gonflage, Reparations)
-        val controleButton = findViewById<Button>(R.id.button6)
-        val gonflageButton = findViewById<Button>(R.id.button7)
-        val reparationsButton = findViewById<Button>(R.id.button8)
+        //Buttons (Controles, Gonflages, Reparations)
+        val controlesButton = findViewById<Button>(R.id.controles_button_ari)
+        val gonflagesButton = findViewById<Button>(R.id.gonflage_button_ari)
+        val reparationsButton = findViewById<Button>(R.id.reparations_button_ari)
 
-        controleButton.setOnClickListener {
+        controlesButton.setOnClickListener {
             val intent = Intent(this, MenuControleAriActivity::class.java)
             intent.putExtra("id", scanID)
             startActivity(intent)
         }
 
-        gonflageButton.setOnClickListener {
+        gonflagesButton.setOnClickListener {
             val intent = Intent(this, MenuGonflageAriActivity::class.java)
             intent.putExtra("id", scanID)
             startActivity(intent)

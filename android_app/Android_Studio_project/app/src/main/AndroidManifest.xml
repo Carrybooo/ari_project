@@ -13,20 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARI_Project"
         tools:ignore="AllowBackup">
+        //mainActivity
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseActivity">
+        //menu_consultation_ari
+        <activity android:name=".MenuAriActivity">
         </activity>
+        //menu_entretien_ari
         <activity android:name=".MenuEntretienAriActivity">
         </activity>
+        //menu_controle_ari
         <activity android:name=".MenuControleAriActivity">
         </activity>
+        //menu_gonflage_ari
         <activity android:name=".MenuGonflageAriActivity">
         </activity>
+        //menu_reparations_ari
         <activity android:name=".MenuReparationsAriActivity">
         </activity>
         <meta-data
