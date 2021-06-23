@@ -10,7 +10,7 @@ try {
         $dataArray[$key]['materiel'] = $donnees[$key]['materiel'];
     }
     echo json_encode(array(
-        'comp_list'=> $dataArray,
+        'liste_elem'=> $dataArray,
     ));
 
 } catch (Exception $e) {
