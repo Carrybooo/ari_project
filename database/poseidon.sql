@@ -194,11 +194,11 @@ CREATE TABLE IF NOT EXISTS `repaencours` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `repaprevuee`
+-- Structure de la table `repaprevu`
 --
 
-DROP TABLE IF EXISTS `repaprevuee`;
-CREATE TABLE IF NOT EXISTS `repaprevuee` (
+DROP TABLE IF EXISTS `repaprevu`;
+CREATE TABLE IF NOT EXISTS `repaprevu` (
   `id` text NOT NULL,
   `executeur` text NOT NULL,
   `lieu` text NOT NULL,

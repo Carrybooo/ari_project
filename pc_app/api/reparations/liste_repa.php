@@ -13,7 +13,7 @@ try {
         $dataArray[$key]['terminee'] = $donnees[$key]['terminee'];
     }
     echo json_encode(array(
-        'comp_list'=> $dataArray,
+        'liste_repa'=> $dataArray,
     ));
 
 } catch (Exception $e) {

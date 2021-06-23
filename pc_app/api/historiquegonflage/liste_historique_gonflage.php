@@ -12,7 +12,7 @@ try {
         $dataArray[$key]['compresseur'] = $donnees[$key]['compresseur'];
     }
     echo json_encode(array(
-        'comp_list'=> $dataArray,
+        'historique_gonflage'=> $dataArray,
     ));
 
 } catch (Exception $e) {
