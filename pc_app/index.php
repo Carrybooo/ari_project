@@ -25,7 +25,7 @@ else{
 	
 	}
 		//include_once('Vues\PHP\header.html');
-		include_once('Vues/projet.html');
+		include_once('Vues/index.html');
 		//include_once('Vues\PHP\footer.html');
 	
 		echo '<a href="./logout.php">Se déconnecter</a>';

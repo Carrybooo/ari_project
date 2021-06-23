@@ -1,9 +1,9 @@
 <?php
 //require '../../api/config.php';
 //require '../../api/ari/liste_ari.php';
-	$content = file_get_contents('http://ari.juliendrieu.fr/api/elements/liste_elem.php');
-	$json = json_decode($content,true);
-	?>
+$content = file_get_contents('http://ari.juliendrieu.fr/api/elements/liste_elem.php');
+$json = json_decode($content, true);
+?>
 <html>
 <head>
 	<title>Liste des Elements</title>
@@ -16,10 +16,10 @@ table {
   text-align: center;
 }
 table td {
-  border: 2px solid black; 
+  border: 2px solid black;
 }
 table th {
-  border: 2px solid black; 
+  border: 2px solid black;
 }
 table tr:first-child td {
   border-top: 0;
@@ -44,20 +44,19 @@ table tr td:last-child {
   </tr>
 </thead>
 <tbody >
-	<?php 
-      foreach ($json['comp_list'] as $key => $value) {
-			
-	?>
+	<?php
+foreach ($json['liste_elem'] as $key => $value) {
+
+    ?>
   <tr >
-    <td ><?php echo $json['comp_list'][$key]['id'];?></td>
-    <td><?php echo $json['comp_list'][$key]['materiel'];?></td>
+    <td ><?php echo $json['liste_elem'][$key]['id']; ?></td>
+    <td><?php echo $json['liste_elem'][$key]['materiel']; ?></td>
   <?php
-			};
-  ?>
+}
+;
+?>
 </tbody>
 </table>
-	<form method="POST" action="../../Controleur/retour.php">
-	  <input type="submit" value="Retour"/>
-	 </form>
+<a href="http://ari.juliendrieu.fr"><button>Retour</button></a>
 </body>
 </html>
