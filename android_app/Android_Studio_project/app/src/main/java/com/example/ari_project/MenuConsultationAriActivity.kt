@@ -1,6 +1,7 @@
 package com.example.ari_project
 
 ///TEST
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -10,7 +11,6 @@ import androidx.lifecycle.lifecycleScope
 import com.example.ari_project.databinding.MenuConsultationAriBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import org.json.JSONException
 import org.json.JSONObject
@@ -27,7 +27,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
     private var jsonString = "<JSON_String>"
     private val url = URL("http://ari.juliendrieu.fr/api/ari/liste_ari.php")
 
-    override fun onCreate(savedInstanceState: Bundle?) = runBlocking {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         //Scan ID
@@ -38,17 +38,20 @@ class MenuConsultationAriActivity : AppCompatActivity() {
 
         etat_gonflage = findViewById(R.id.text_etat_gonflage_value)
         lieu_stock = findViewById(R.id.text_lieu_de_stock_value)
+        val accueil = findViewById<Button>(R.id.home_button)
 
         title = getString(R.string.ID_equipe_consultation) + " " + scanID //titre qui contient l'ID
 
-        ////////////////TRY///////////////TODO() fichier a bien clean
-
-        //url.let { textConsultation.text = it.toString() }
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         // io dispatcher pour les opérations réseau
         lifecycleScope.launch(Dispatchers.IO){
             //jsonString = url.getString().toString()
             jsonString = url.readText()
+
 
             // default dispatcher pour le parsing, gros travail CPU
             withContext(Dispatchers.Default){
@@ -57,16 +60,20 @@ class MenuConsultationAriActivity : AppCompatActivity() {
 
                 // main dispatcher pour les interactions avec l'UI
                 withContext(Dispatchers.Main) {
-                    etat_gonflage.text = when(ari?.etat_gonflage.toString()){
-                        "1" -> "Gonflé"
+                    etat_gonflage.text = when(ari?.etat_gonflage){
+                        null -> "ID non trouvé"
+                        1 -> "Gonflé"
                         else -> "Non gonflé/Défectueux"
                     }
-                    lieu_stock.text = ari?.lieu_stock
+                    lieu_stock.text = when(ari?.lieu_stock){
+                        null -> "ID non trouvé"
+                        else -> ari?.lieu_stock
+                    }
                 }
             }
         }
-        print("ENDMARKER-----------------------------------MenuConsultationAriActivity----OnCreate")
-    }//oncreate
+        println("ENDMARKER-----------------------------------MenuConsultationAriActivity----OnCreate")
+    }//ONCREATE
 
 
 
@@ -79,15 +86,10 @@ class MenuConsultationAriActivity : AppCompatActivity() {
 
     private fun parseJson(data:String, id:String):ARI?{
         var element = ARI("",0,"")
-        println("ENTERTHEPARSIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIING")
-
         try {
             val array = JSONObject(data).getJSONArray("ari_list")
             for(i in 0 until array.length()){
                 val obj = JSONObject(array[i].toString())
-                println("newJSON : "+obj)
-                println("newJSON2 : "+obj)
-                println("newJSON3 : "+obj)
                 if(obj.getString("id")==id) {
                     val etatGonflage = obj.getInt("etat_gonflage")
                     val lieuStock = obj.getString("lieu_stock")
@@ -99,44 +101,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
         }
         return if(element.id != "") element
         else null
-    }
+    }//PARSEJSON
 
 
-
-
-
-
-
-
-
-    /*
-    private fun fetch() = runBlocking {
-        launch {
-            println("JSONSTRING---------------------:"+jsonString)
-            //jsonString = url.readText()
-            url.let { jsonString = it.readText() }
-            println("JSONSTRING---------------------:"+jsonString)
-        }
-        textConsultation.text = jsonString
-    }*/
-
-    /*
-    fun URL.getString(): String? {
-        val stream = openStream()
-        return try {
-            val r = BufferedReader(InputStreamReader(stream))
-            val result = StringBuilder()
-            var line: String?
-            while (r.readLine().also { line = it } != null) {
-                result.append(line).appendLine()
-            }
-            result.toString()
-        }catch (e: IOException){
-            e.toString()
-        }
-    }
-    */
-
-
-
-}
+}//ENBRACKET

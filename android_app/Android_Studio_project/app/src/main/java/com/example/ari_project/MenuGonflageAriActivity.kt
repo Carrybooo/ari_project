@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ari_project.databinding.MenuEntretienAriBinding
 import com.example.ari_project.databinding.MenuGonflageAriBinding
 
 class MenuGonflageAriActivity : AppCompatActivity() {
@@ -35,6 +34,15 @@ class MenuGonflageAriActivity : AppCompatActivity() {
             R.id.radioButton2 -> "Non" //Update la table avec gonlfage à 0 si modif effective
             else -> "You must check an option !" //Toast avec obligation de choisir une option
         }
+
+        //get ancien etat
+        //case ->    ancien == nouveletat
+        //toast : c'est déjà l'état actuel.
+        //case ->    ancien != nouveletat
+        //url.envoyer(id, nouveletat)
+        //url.lire(id, etat)
+        //si etat == nouveletat
+        // -> change ecran -> modif bien prise en compte
 
 
 
