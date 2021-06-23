@@ -151,7 +151,7 @@ INSERT INTO `elements` (`materiel`, `id`) VALUES
 
 DROP TABLE IF EXISTS `historiquegonflage`;
 CREATE TABLE IF NOT EXISTS `historiquegonflage` (
-  `id` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ari` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `date` date NOT NULL,
   `lieu` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `compresseur` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
