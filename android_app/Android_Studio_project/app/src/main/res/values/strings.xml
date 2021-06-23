@@ -31,7 +31,6 @@
     <string name="text_historique_reparations">Historique des réparations :</string>
     <string name="text_historique_reparations_value">texte</string>
 
-
     //1er ecran si scan d'un compresseur
     <string name="consultation_button_comp">Consultation</string>
     <string name="entretien_button_comp">Entretien</string>
