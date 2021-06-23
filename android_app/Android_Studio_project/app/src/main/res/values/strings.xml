@@ -10,41 +10,68 @@
 
     //ecran lecteur QR
     <string name="confirm_read_button">Confirmer</string>
+
+
     //1er ecran si scan d'un ARI
     <string name="consultation_button_ari">Consultation</string>
     <string name="entretien_button_ari">Entretien</string>
     <string name="affectation_button_ari">Affectation</string>
+
+
     //Ecran "Menu consultation" pour ARI
     //TODO() voir comment on met en place l'affichage des requêtes (vue scroll, recycler, fragment ?)
     <string name="text_etat_gonflage">Etat de gonflage :</string>
-    <string name="text_etat_gonflage_value">...</string>
+    <string name="text_etat_gonflage_value">texte</string>
     <string name="text_lieu_de_stock">Lieu de stockage :</string>
-    <string name="text_lieu_de_stock_value">Aucun</string>
+    <string name="text_lieu_de_stock_value">texte</string>
+    <string name="text_historique_gonflages">Historique des gonflages :</string>
+    <string name="text_historique_gonflages_value">texte</string>
+    <string name="text_historique_controles">Historique des contrôles :</string>
+    <string name="text_historique_controles_value">texte</string>
+    <string name="text_historique_reparations">Historique des réparations :</string>
+    <string name="text_historique_reparations_value">texte</string>
+
+
     //1er ecran si scan d'un compresseur
     <string name="consultation_button_comp">Consultation</string>
     <string name="entretien_button_comp">Entretien</string>
+
+
     //Ecran "menu d'entretien" pour ARI
     <string name="controles_button_ari">Contrôles</string>
     <string name="gonflages_button_ari">Gonflages</string>
     <string name="reparations_button_ari">Réparations</string>
+
+
     //Ecran"Menu de contrôle" pour ARI
     <string name="historique_controle_ari">Historique</string>
     <string name="effect_button_ari">Effectuer le contrôle</string>
+
+
     //Ecran "Menu de réparations" pour ARI
     <string name="historique_repa_ari">Historique</string>
     <string name="prog_repa_ari">Programmer une réparation</string>
     <string name="effect_repa_ari">Effectuer une réparation</string>
+
+
     //Ecran "Menu de gonflage" pour ARI
     <string name="box_oui_ari">OUI</string>
     <string name="box_non_ari">NON</string>
     <string name="validation_gonflage">Valider</string>
+
+
     //Ecran "Menu de validation du gonflage" pour ARI
     <string name="texte_validation">Modification bien prise en compte !</string>
+
+
     //Ecran "Menu affectation" pour ARI
     <string name="affectation_add_button">Affecter</string>
     <string name="affectation_remove_button">Retirer</string>
+
+
     //Ecran "Menu affectation add" pour ARI
     //RIEN : réutilisation des variables d'autres écrans
+
     //Ecran "Menu affectation remove" pour ARI
     //RIEN : réutilisation des variables d'autres écrans
 
