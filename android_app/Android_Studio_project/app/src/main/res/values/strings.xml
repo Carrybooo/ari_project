@@ -16,7 +16,10 @@
     <string name="affectation_button_ari">Affectation</string>
     //Ecran "Menu consultation" pour ARI
     //TODO() voir comment on met en place l'affichage des requêtes (vue scroll, recycler, fragment ?)
-    <string name="dernier_gonflage">Dernier gonflage :</string>
+    <string name="text_etat_gonflage">Etat de gonflage :</string>
+    <string name="text_etat_gonflage_value">...</string>
+    <string name="text_lieu_de_stock">Lieu de stockage :</string>
+    <string name="text_lieu_de_stock_value">Aucun</string>
     //1er ecran si scan d'un compresseur
     <string name="consultation_button_comp">Consultation</string>
     <string name="entretien_button_comp">Entretien</string>
