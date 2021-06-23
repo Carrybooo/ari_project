@@ -2,6 +2,8 @@ package com.example.ari_project
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ari_project.databinding.MenuEntretienAriBinding
@@ -16,7 +18,6 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         //declarations éléments ---->
         entretienAriBinding = MenuEntretienAriBinding.inflate(layoutInflater)
         setContentView(entretienAriBinding.root)
-
 
         //scanID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
@@ -45,11 +46,7 @@ class MenuEntretienAriActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-
-
-
         title = getString(R.string.ID_equipe_entretien) + " " + scanID //titre qui contient l'ID
     }
+
 }

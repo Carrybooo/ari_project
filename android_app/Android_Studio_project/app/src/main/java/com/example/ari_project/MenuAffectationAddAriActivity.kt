@@ -23,6 +23,6 @@ class MenuAffectationAddAriActivity : AppCompatActivity(){
 
         textViewID.text = scanID
 
-        title = getString(R.string.ID_equipe_affectation) + "(Ajouter) " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_affectation) + " " + scanID + " (Ajouter)"//titre qui contient l'ID
     }
 }

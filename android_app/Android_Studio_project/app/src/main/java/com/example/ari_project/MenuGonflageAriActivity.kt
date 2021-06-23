@@ -29,6 +29,6 @@ class MenuGonflageAriActivity : AppCompatActivity() {
 
 
 
-        title = getString(R.string.ID_equipe_entretien) + "(Gonflage) " + scanID //titre qui contient l'ID
+        title = getString(R.string.ID_equipe_entretien) + " " + scanID + " (Gonflage)" //titre qui contient l'ID
     }
 }
