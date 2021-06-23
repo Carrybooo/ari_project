@@ -1,5 +1,6 @@
 package com.example.ari_project
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -27,6 +28,7 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         val controlesButton = findViewById<Button>(R.id.controles_button_ari)
         val gonflagesButton = findViewById<Button>(R.id.gonflage_button_ari)
         val reparationsButton = findViewById<Button>(R.id.reparations_button_ari)
+        val accueil = findViewById<Button>(R.id.home_button)
 
         controlesButton.setOnClickListener {
             val intent = Intent(this, MenuControleAriActivity::class.java)
@@ -43,6 +45,11 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         reparationsButton.setOnClickListener {
             val intent = Intent(this, MenuReparationsAriActivity::class.java)
             intent.putExtra("id", scanID)
+            startActivity(intent)
+        }
+
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

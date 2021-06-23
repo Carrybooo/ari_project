@@ -1,6 +1,8 @@
 package com.example.ari_project
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ari_project.databinding.MenuReparationsAriBinding
 
@@ -17,6 +19,13 @@ class MenuReparationsAriActivity : AppCompatActivity() {
         //declarations éléments ---->
         reparationsAriBinding = MenuReparationsAriBinding.inflate(layoutInflater)
         setContentView(reparationsAriBinding.root)
+
+        val accueil = findViewById<Button>(R.id.home_button)
+
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         title = getString(R.string.ID_equipe_entretien) + " " + scanID + " (Reparations)"//titre qui contient l'ID
     }

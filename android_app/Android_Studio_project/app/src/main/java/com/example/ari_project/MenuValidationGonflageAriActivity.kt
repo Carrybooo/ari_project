@@ -1,6 +1,8 @@
 package com.example.ari_project
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ari_project.databinding.MenuValidationGonflageAriBinding
 
@@ -16,6 +18,13 @@ class MenuValidationGonflageAriActivity : AppCompatActivity(){
 
         validGonflage = MenuValidationGonflageAriBinding.inflate(layoutInflater)
         setContentView(validGonflage.root)
+
+        val accueil = findViewById<Button>(R.id.home_button)
+
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         title = getString(R.string.ID_equipe) + "(Validation) " + scanID //titre qui contient l'ID
     }

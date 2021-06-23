@@ -1,6 +1,7 @@
 package com.example.ari_project
 
 ///TEST
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button

@@ -19,6 +19,7 @@ class MenuAffectationAriActivity : AppCompatActivity() {
 
         val addButton = findViewById<Button>(R.id.affectation_add_button)
         val removeButton = findViewById<Button>(R.id.affectation_remove_button)
+        val accueil = findViewById<Button>(R.id.home_button)
 
         //Scan ID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
@@ -33,6 +34,11 @@ class MenuAffectationAriActivity : AppCompatActivity() {
         removeButton.setOnClickListener {
             val intent = Intent(this, MenuAffectationRemoveAriActivity::class.java)
             intent.putExtra("id", scanID)
+            startActivity(intent)
+        }
+
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
