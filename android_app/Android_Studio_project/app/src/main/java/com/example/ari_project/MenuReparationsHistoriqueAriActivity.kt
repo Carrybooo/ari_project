@@ -22,7 +22,7 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
 
     //elements ref
     private val url =
-        URL("http://ari.juliendrieu.fr/api/historiquegonflage/liste_historique_repa.php")
+        URL("http://ari.juliendrieu.fr/api/historiquerepa/liste_historique_repa.php")
     private var jsonText = "<JSON_String>"
 
     //views ref
@@ -50,11 +50,8 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launch(Dispatchers.IO) {
-            try {
-                jsonText = url.readText()
-            } catch (e: IOException) {
-                e.toString()
-            }
+            try {jsonText = url.readText()}
+            catch (e: IOException) {e.toString()}
 
             println(jsonText)
 
@@ -68,7 +65,7 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
                         }
                         else -> listRepa.forEach {
                             texteHistoriqueRepaID.append("\n" + it.id)
-                            texteHistoriqueRepaID.append("\n" + it.date)
+                            texteHistoriqueRepaDate.append("\n" + it.date)
                         }
                     }
                 }
@@ -93,7 +90,7 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
             val array = JSONObject(data).getJSONArray("historique_repa")
             for (i in 0 until array.length()) {
                 val obj = JSONObject(array[i].toString())
-                if (obj.getString("ari") == id) {
+                if (obj.getString("id") == id) {
                     val date = obj.getString("date")
                     elementRepa = Repa(
                         id, date

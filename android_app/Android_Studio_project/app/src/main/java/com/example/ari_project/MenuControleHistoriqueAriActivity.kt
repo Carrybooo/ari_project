@@ -22,7 +22,7 @@ class MenuControleHistoriqueAriActivity : AppCompatActivity() {
 
     //elements ref
     private val url =
-        URL("http://ari.juliendrieu.fr/api/historiquegonflage/liste_historique_controle.php")
+        URL("http://ari.juliendrieu.fr/api/historiquecontrole/liste_historique_controle.php")
     private var jsonText = "<JSON_String>"
 
     //views ref
@@ -36,11 +36,14 @@ class MenuControleHistoriqueAriActivity : AppCompatActivity() {
         histoControle = MenuControleHistoriqueAriBinding.inflate(layoutInflater)
         setContentView(histoControle.root)
 
-        val accueil = findViewById<Button>(R.id.home_button)
+        texteHistoriqueControleID = findViewById(R.id.text_historique_controle_ari_id)
+        texteHistoriqueControleDate = findViewById(R.id.text_historique_controle_ari_date)
+        texteHistoriqueControleExec = findViewById(R.id.text_historique_controle_ari_executeur)
 
         //Scan ID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
+        val accueil = findViewById<Button>(R.id.home_button)
         accueil.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -66,7 +69,7 @@ class MenuControleHistoriqueAriActivity : AppCompatActivity() {
                         }
                         else -> listRepa.forEach {
                             texteHistoriqueControleID.append("\n" + it.id)
-                            texteHistoriqueControleExec.append("\n" + it.date)
+                            texteHistoriqueControleDate.append("\n" + it.date)
                             texteHistoriqueControleExec.append("\n" + it.executeur)
                         }
                     }
@@ -93,7 +96,7 @@ class MenuControleHistoriqueAriActivity : AppCompatActivity() {
             val array = JSONObject(data).getJSONArray("historique_controle")
             for (i in 0 until array.length()) {
                 val obj = JSONObject(array[i].toString())
-                if (obj.getString("ari") == id) {
+                if (obj.getString("id") == id) {
                     val date = obj.getString("date")
                     val executeur = obj.getString("executeur")
                     elementControle = Controle(

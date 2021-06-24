@@ -15,8 +15,6 @@ class MenuAffectationRemoveAriActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val accueil = findViewById<Button>(R.id.home_button)
-
         affectRemove = MenuAffectationRemoveAriBinding.inflate(layoutInflater)
         setContentView(affectRemove.root)
 
@@ -24,9 +22,9 @@ class MenuAffectationRemoveAriActivity : AppCompatActivity(){
 
         //Scan ID
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
-
         textViewID.text = scanID
 
+        val accueil = findViewById<Button>(R.id.home_button)
         accueil.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

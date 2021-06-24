@@ -48,7 +48,6 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
         texteHistoriqueGonflageCompresseur = findViewById(R.id.text_historique_gonflage_ari_compresseur)
 
         val accueil = findViewById<Button>(R.id.home_button)
-
         accueil.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -78,9 +77,7 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
                         }
                     }
                 }
-
             }
-
         }
 
 
@@ -113,7 +110,7 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
                     list.add(elementGonf)
                 }
             }
-            list.sortByDescending{it.date}//on trie bien les éléments pour avoir le plus récent en haut
+            list.sortByDescending{it.date}
         }catch (e:JSONException){
             Log.d("Exception", e.toString())
         }

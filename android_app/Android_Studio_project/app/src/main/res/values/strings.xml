@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">ARI_Project</string>
     <string name="poseidon_logo">ARI_Project</string>
     <string name="scan_button">SCANNER</string>
@@ -100,7 +100,12 @@
 
 
     //Ecran "Menu affectation add" pour ARI
-    //RIEN : réutilisation des variables d'autres écrans
+    <string name="etat_affectation_add">Affectation actuelle :</string>
+    <string name="etat_affectation_add_value">*affectation*</string>
+    <string name="etat_affectation_add_change">Nouvelle affectation désirée :</string>
+    <string name="etat_affectation_add_change_value" tools:ignore="Typos">Affectation désirée (exemple : CS3) :</string>
+
+
 
     //Ecran "Menu affectation remove" pour ARI
     //RIEN : réutilisation des variables d'autres écrans
