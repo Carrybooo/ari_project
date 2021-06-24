@@ -104,7 +104,8 @@
     <string name="etat_affectation_add">Affectation actuelle :</string>
     <string name="etat_affectation_add_value">*affectation*</string>
     <string name="etat_affectation_add_change">Nouvelle affectation désirée :</string>
-    <string name="etat_affectation_add_change_value" tools:ignore="Typos">Affectation désirée (exemple : CS3) :</string>
+    <string name="etat_affectation_add_change_value" tools:ignore="Typos">Affectation (exemple : CS3) :</string>
+
 
 
 
