@@ -36,8 +36,8 @@ table tr td:last-child {
 }
 </style>
 <body>
+  <form>
 	<h3>La liste de tous les ARI</h3>
-<form>
 <table>
 <thead>
   <tr>
