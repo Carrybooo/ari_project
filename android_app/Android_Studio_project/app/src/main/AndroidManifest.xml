@@ -42,7 +42,7 @@
             tools:ignore="LockedOrientationActivity">
         </activity>
         <!--menu_gonflage_ari-->
-        <activity android:name=".MenuGonflageAriActivity"
+        <activity android:name=".MenuChoixGonflageAriActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>

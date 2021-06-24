@@ -4,11 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ari_project.databinding.MenuGonflageAriBinding
+import com.example.ari_project.databinding.MenuChoixGonflageAriBinding
 
-class MenuGonflageAriActivity : AppCompatActivity() {
+class MenuChoixGonflageAriActivity : AppCompatActivity() {
 
-    private lateinit var gonflageAriBinding: MenuGonflageAriBinding
+    private lateinit var gonflageAriBinding: MenuChoixGonflageAriBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class MenuGonflageAriActivity : AppCompatActivity() {
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
         //declarations éléments ---->
-        gonflageAriBinding = MenuGonflageAriBinding.inflate(layoutInflater)
+        gonflageAriBinding = MenuChoixGonflageAriBinding.inflate(layoutInflater)
         setContentView(gonflageAriBinding.root)
 
         val accueil = findViewById<Button>(R.id.home_button)
