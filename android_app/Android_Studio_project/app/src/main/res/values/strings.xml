@@ -80,4 +80,8 @@
 
     //TEMP:
     <string name="buttonPull">PULL</string>
+    <string name="effect_gonflage_ari"> Effectuer un gonflage</string>
+    <string name="historique_gonflage_ari"> Historique </string>
+    <string name="text_historique_reparation_ari"> texte </string>
+    <string name="text_historique_gonflage_ari"> texte </string>
 </resources>
