@@ -34,7 +34,7 @@ class MenuAffectationAddAriActivity : AppCompatActivity(){
 
     //elements ref
     private val urlAriList = URL("http://ari.juliendrieu.fr/api/ari/liste_ari.php")
-    private var urlModifEtatGonflage = URL("http://ari.juliendrieu.fr/api/reglages/modifier_lieu.php")
+    private var urlModifLieuStock = URL("http://ari.juliendrieu.fr/api/reglages/modifier_gonflage.php")
     private var jsonQuery = "<JSON_String>"
     private var jsonResponse = "<JSON_String>"
 
@@ -83,7 +83,7 @@ class MenuAffectationAddAriActivity : AppCompatActivity(){
                         else -> affectString
                     }
                     affectation_add_confirm_button.setOnClickListener{
-                        urlModifEtatGonflage = URL("http://ari.juliendrieu.fr/api/reglages/modifier_lieu.php")
+                        urlModifLieuStock = URL("http://ari.juliendrieu.fr/api/reglages/modifier_lieu.php")
                         val affectNew = inputAffectationAdd.text.toString()
                         if(affectBool) {//si l'ID est bien dans la base de données
                             when (affectNew) {//switch sur le texte entré
@@ -103,11 +103,11 @@ class MenuAffectationAddAriActivity : AppCompatActivity(){
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     } else {//si c'est bien un CS, on procède au changement d'affectation voulu
-                                        urlModifEtatGonflage =//on setup le lien de modif
-                                            URL(urlModifEtatGonflage.toString()
+                                        urlModifLieuStock =//on setup le lien de modif
+                                            URL(urlModifLieuStock.toString()
                                                     +"?id="+scanID+"&lieu_stock="+affectNew)
                                         //on modif et on stock la réponse
-                                        try{jsonResponse = urlModifEtatGonflage.readText()}
+                                        try{jsonResponse = urlModifLieuStock.readText()}
                                         catch (e: IOException){e.toString()}
                                         //on formate la réponse (problème avec les caratères spéciaux)
                                         jsonResponse=jsonResponse.replace("\\u00e9","é")
