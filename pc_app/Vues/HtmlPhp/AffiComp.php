@@ -1,9 +1,9 @@
 <?php
 //require '../../api/config.php';
 //require '../../api/ari/liste_ari.php';
-	$content = file_get_contents('http://ari.juliendrieu.fr/api/compresseurs/liste_comp.php');
-	$json = json_decode($content,true);
-	?>
+$content = file_get_contents('http://ari.juliendrieu.fr/api/compresseurs/liste_comp.php');
+$json = json_decode($content, true);
+?>
 <html>
 <head>
 	<title>Liste des Compresseurs</title>
@@ -16,10 +16,10 @@ table {
   text-align: center;
 }
 table td {
-  border: 2px solid black; 
+  border: 2px solid black;
 }
 table th {
-  border: 2px solid black; 
+  border: 2px solid black;
 }
 table tr:first-child td {
   border-top: 0;
@@ -42,33 +42,24 @@ table tr td:last-child {
     <th>ID</th>
     <th>Fonctionnel</th>
     <th>Lieu de Stock</th>
-    <th>Reparation</th>
-    <th>Controle</th>
-    <th>Utilisation</th>
-    <th>Vehicule</th>
   </tr>
 </thead>
 <tbody >
-	<?php 
-      foreach ($json['comp_list'] as $key => $value) {
-			
-	?>
+	<?php
+foreach ($json['comp_list'] as $key => $value) {
+
+    ?>
   <tr >
-    <td ><?php echo $json['comp_list'][$key]['id'];?></td>
-    <td><?php echo $json['comp_list'][$key]['fonctionnel'];?></td>
-    <td><?php echo $json['comp_list'][$key]['lieu_stock'];?></td>
-    <td><?php echo $json['comp_list'][$key]['reparation'];?></td>
-    <td><?php echo $json['comp_list'][$key]['controle'];?></td>
-    <td><?php echo $json['comp_list'][$key]['utilisation'];?></td>
-    <td><?php echo $json['comp_list'][$key]['vehicule'];?></td>
+    <td ><?php echo $json['comp_list'][$key]['id']; ?></td>
+    <td><?php echo $json['comp_list'][$key]['fonctionnel']; ?></td>
+    <td><?php echo $json['comp_list'][$key]['lieu_stock']; ?></td>
   </tr>
   <?php
-			};
-  ?>
+}
+;
+?>
 </tbody>
 </table>
-	<form method="POST" action="../../Controleur/retour.php">
-	  <input type="submit" value="Retour"/>
-	 </form>
+<a href="http://ari.juliendrieu.fr"><button>Retour</button></a>
 </body>
 </html>

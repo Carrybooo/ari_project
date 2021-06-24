@@ -2,15 +2,14 @@
 require_once '../config.php';
 try {
     $dataArray = array();
-    $reponse = $bdd->query("SELECT * FROM elements");
+    $reponse = $bdd->query("SELECT ari.id FROM ari UNION SELECT compresseurs.id FROM compresseurs;");
     $donnees = $reponse->fetchALL();
     header ('Content-Type: application/json');
     foreach ($donnees as $key => $value) {
         $dataArray[$key]['id'] = $donnees[$key]['id'];
-        $dataArray[$key]['materiel'] = $donnees[$key]['materiel'];
     }
     echo json_encode(array(
-        'comp_list'=> $dataArray,
+        'liste_elem'=> $dataArray,
     ));
 
 } catch (Exception $e) {

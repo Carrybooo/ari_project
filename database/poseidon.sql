@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 22 juin 2021 à 14:59
+-- Généré le : jeu. 24 juin 2021 à 11:41
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -39,10 +39,9 @@ CREATE TABLE IF NOT EXISTS `ari` (
 --
 
 INSERT INTO `ari` (`id`, `etat_gonflage`, `lieu_stock`) VALUES
-('ARI10', 0, 'CS10'),
-('ARI11', 0, 'CS10'),
-('ARI12', 0, 'CS10'),
-('ARI14', 0, 'CS12');
+('ARI1', 1, 'CS1'),
+('ARI2', 0, 'CS1'),
+('ARI3', 1, 'CS2');
 
 -- --------------------------------------------------------
 
@@ -62,9 +61,9 @@ CREATE TABLE IF NOT EXISTS `compresseurs` (
 --
 
 INSERT INTO `compresseurs` (`id`, `fonctionnel`, `lieu_stock`) VALUES
-('CP10', 0, 'CS11'),
-('CP11', 0, 'CS12'),
-('CP12', 0, 'CS13');
+('CP1', 1, 'CS1'),
+('CP2', 0, 'CS2'),
+('CP3', 1, 'CS2');
 
 -- --------------------------------------------------------
 
@@ -84,8 +83,21 @@ CREATE TABLE IF NOT EXISTS `controlehistorique` (
 --
 
 INSERT INTO `controlehistorique` (`id`, `date`, `executeur`) VALUES
-('ARI13', '2021-06-02', 'bramone'),
-('CP12', '2021-06-03', 'bramone');
+('ARI1', '2021-06-23', 'bramone'),
+('ARI1', '2021-06-16', 'bramone'),
+('ARI1', '2021-05-18', 'bramone'),
+('ARI1', '2021-05-11', 'bramone'),
+('ARI1', '2021-04-21', 'bramone'),
+('ARI2', '2021-04-27', 'ajoua'),
+('ARI2', '2021-05-12', 'ajoua'),
+('ARI2', '2021-05-25', 'ajoua'),
+('ARI2', '2021-06-09', 'ajoua'),
+('ARI2', '2021-06-23', 'ajoua'),
+('ARI3', '2021-06-22', 'bramone'),
+('ARI3', '2021-06-14', 'bramone'),
+('ARI3', '2021-05-31', 'bramone'),
+('ARI3', '2021-05-19', 'bramone'),
+('ARI3', '2021-04-20', 'bramone');
 
 -- --------------------------------------------------------
 
@@ -100,49 +112,6 @@ CREATE TABLE IF NOT EXISTS `controleprevu` (
   `executeur` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Déchargement des données de la table `controleprevu`
---
-
-INSERT INTO `controleprevu` (`id`, `date`, `executeur`) VALUES
-('CP11', '2021-06-22', 'bramone'),
-('ARI13', '2021-06-24', 'bramone'),
-('ARI10', '2021-06-27', 'bramone');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `elements`
---
-
-DROP TABLE IF EXISTS `elements`;
-CREATE TABLE IF NOT EXISTS `elements` (
-  `materiel` text NOT NULL,
-  `id` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant tout le matériel';
-
---
--- Déchargement des données de la table `elements`
---
-
-INSERT INTO `elements` (`materiel`, `id`) VALUES
-('ARI', 'ARI10'),
-('ARI', 'ARI11'),
-('ARI', 'ARI12'),
-('ARI', 'ARI13'),
-('Compresseur', 'CP10'),
-('Compresseur', 'CP11'),
-('Compresseur', 'CP12'),
-('Compresseur', 'CP13'),
-('Centre', 'CS10'),
-('Centre', 'CS12'),
-('Centre', 'CS11'),
-('Centre', 'CS13'),
-('vehicule', 'V10'),
-('vehicule', 'V11'),
-('vehicule', 'V12'),
-('vehicule', 'V13');
-
 -- --------------------------------------------------------
 
 --
@@ -156,6 +125,26 @@ CREATE TABLE IF NOT EXISTS `historiquegonflage` (
   `lieu` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `compresseur` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `historiquegonflage`
+--
+
+INSERT INTO `historiquegonflage` (`ari`, `date`, `lieu`, `compresseur`) VALUES
+('ARI1', '2021-06-21', 'CS1', 'CP1'),
+('ARI1', '2021-06-09', 'CS1', 'CP1'),
+('ARI1', '2021-05-26', 'CS2', 'CP2'),
+('ARI1', '2021-05-17', 'CS1', 'CP1'),
+('ARI2', '2021-06-21', 'CS1', 'CP1'),
+('ARI2', '2021-06-10', 'CS1', 'CP1'),
+('ARI2', '2021-05-05', 'CS2', 'CP2'),
+('ARI2', '2021-04-28', 'CS2', 'CP2'),
+('ARI2', '2021-04-19', 'CS2', 'CP2'),
+('ARI3', '2021-06-21', 'CS1', 'CP1'),
+('ARI3', '2021-06-14', 'CS1', 'CP1'),
+('ARI3', '2021-05-25', 'CS2', 'CP2'),
+('ARI3', '2021-05-12', 'CS2', 'CP2'),
+('ARI3', '2021-04-28', 'CS2', 'CP2');
 
 -- --------------------------------------------------------
 
@@ -174,9 +163,21 @@ CREATE TABLE IF NOT EXISTS `historiquerepa` (
 --
 
 INSERT INTO `historiquerepa` (`id`, `date`) VALUES
-('ARI11', '2021-06-01'),
-('ARI13', '2021-06-05'),
-('ARI12', '2021-06-09');
+('ARI1', '2021-06-22'),
+('ARI1', '2021-06-16'),
+('ARI1', '2021-05-25'),
+('ARI1', '2021-05-11'),
+('ARI1', '2021-04-27'),
+('ARI2', '2021-06-14'),
+('ARI2', '2021-06-05'),
+('ARI2', '2021-05-18'),
+('ARI2', '2021-05-05'),
+('ARI2', '2021-04-19'),
+('ARI2', '2021-06-19'),
+('ARI3', '2021-06-10'),
+('ARI3', '2021-05-24'),
+('ARI3', '2021-05-13'),
+('ARI3', '2021-04-07');
 
 -- --------------------------------------------------------
 
@@ -220,14 +221,6 @@ CREATE TABLE IF NOT EXISTS `reparations` (
   `terminee` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Table recensant toutes les reparations';
 
---
--- Déchargement des données de la table `reparations`
---
-
-INSERT INTO `reparations` (`id`, `en_demande`, `prevue`, `en_cours`, `terminee`) VALUES
-('ARI14', 1, 1, 1, 0),
-('ARI13', 1, 1, 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -240,14 +233,6 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `password` text NOT NULL,
   `Admin` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `utilisateurs`
---
-
-INSERT INTO `utilisateurs` (`identifiant`, `password`, `Admin`) VALUES
-('bramone', 'bramonekek', 0),
-('ajoua', 'ajoualel', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
