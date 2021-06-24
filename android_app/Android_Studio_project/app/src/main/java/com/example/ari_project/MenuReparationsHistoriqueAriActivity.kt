@@ -22,7 +22,7 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
 
     //elements ref
     private val url =
-        URL("http://ari.juliendrieu.fr/api/historiquegonflage/liste_historique_repa.php")
+        URL("http://ari.juliendrieu.fr/api/historiquerepa/liste_historique_repa.php")
     private var jsonText = "<JSON_String>"
 
     //views ref
@@ -76,7 +76,10 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
             }
 
         }
+
+        title = getString(R.string.ID_equipe_histo) + " " + scanID + " (Réparations)"//titre qui contient l'ID
     }
+
 
     data class Repa(
         var id: String,

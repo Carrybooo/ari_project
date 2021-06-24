@@ -7,6 +7,7 @@
     <string name="ID_equipe_consultation">Consultation :</string>
     <string name="ID_equipe_entretien">Entretien :</string>
     <string name="ID_equipe_affectation">Affectation :</string>
+    <string name="ID_equipe_histo">Historique :</string>
 
     //ecran lecteur QR
     <string name="confirm_read_button">Confirmer</string>

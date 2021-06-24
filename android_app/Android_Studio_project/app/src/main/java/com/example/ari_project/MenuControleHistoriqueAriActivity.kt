@@ -76,6 +76,8 @@ class MenuControleHistoriqueAriActivity : AppCompatActivity() {
 
         }
 
+        title = getString(R.string.ID_equipe_histo) + " " + scanID + " (Controle)"//titre qui contient l'ID
+
 
     }
 

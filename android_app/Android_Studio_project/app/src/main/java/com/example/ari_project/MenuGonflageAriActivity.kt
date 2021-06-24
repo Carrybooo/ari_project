@@ -38,5 +38,7 @@ class MenuGonflageAriActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        title = getString(R.string.ID_equipe_entretien) + " " + scanID + " (Gonflage)"//titre qui contient l'ID
     }
 }
