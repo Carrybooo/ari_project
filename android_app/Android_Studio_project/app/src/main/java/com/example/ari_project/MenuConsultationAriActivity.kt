@@ -21,6 +21,7 @@ import java.net.URL
 
 class MenuConsultationAriActivity : AppCompatActivity() {
 
+    //views refs
     private lateinit var consultationAriBinding: MenuConsultationAriBinding
     private lateinit var etatGonflage : TextView
     private lateinit var lieuStock : TextView
@@ -28,6 +29,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
     private lateinit var textHistoriqueControlesValue : TextView
     private lateinit var textHistoriqueReparationsValue : TextView
 
+    //elements refs
     private val urlAriList = URL("http://ari.juliendrieu.fr/api/ari/liste_ari.php")
     private var jsonAriList = "<JSON_String>"
     private val urlHistoriqueGonflage = URL("http://ari.juliendrieu.fr/api/historiquegonflage/liste_historique_gonflage.php")
@@ -67,7 +69,8 @@ class MenuConsultationAriActivity : AppCompatActivity() {
         // io dispatcher pour les opérations réseau
         lifecycleScope.launch(Dispatchers.IO){
             //jsonString = url.getString().toString()
-            jsonAriList = urlAriList.readText()
+            try{jsonAriList = urlAriList.readText()}
+            catch (e: IOException){e.toString()}
             try {jsonHistoriqueGonflage = urlHistoriqueGonflage.readText()}
             catch (e: IOException){e.toString()}
             try {jsonHistoriqueControle = urlHistoriqueControle.readText()}
@@ -75,14 +78,25 @@ class MenuConsultationAriActivity : AppCompatActivity() {
             try {jsonHistoriqueReparation = urlHistoriqueReparation.readText()}
             catch (e: IOException){e.toString()}
 
+            /* PRINTER JSON TEST
+            println("JSON PRINTER GONFL----------------------------------------------------------")
+            println(jsonHistoriqueGonflage)
+            println("JSON PRINTER CONTR----------------------------------------------------------")
+            println(jsonHistoriqueControle)
+            println("JSON PRINTER REPAR----------------------------------------------------------")
+            println(jsonHistoriqueReparation)
+            */
 
             // default dispatcher pour le parsing, gros travail CPU
             withContext(Dispatchers.Default){
                 //on parse le JSON récupéré pour récupérer les infos liées au scanID
                 val ari = getAriInfo(jsonAriList, scanID)
-                ari?.historique_gonflages = getHistoriqueGonflages(jsonHistoriqueGonflage, scanID)
-                ari?.historique_controles = getHistoriqueControles(jsonHistoriqueControle, scanID)
-                ari?.historique_reparations = getHistoriqueReparations(jsonHistoriqueReparation, scanID)
+                val historiqueGonflages = getHistoriqueGonflages(jsonHistoriqueGonflage, scanID)
+                val historiqueControles = getHistoriqueControles(jsonHistoriqueControle, scanID)
+                val historiqueReparations = getHistoriqueReparations(jsonHistoriqueReparation, scanID)
+                println(historiqueControles.toString())
+
+
                 // main dispatcher pour les interactions avec l'UI
                 withContext(Dispatchers.Main) {
                     etatGonflage.text = when(ari?.etat_gonflage){
@@ -94,24 +108,33 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                         null -> "ID non trouvé"
                         else -> ari.lieu_stock
                     }
-                    when(ari?.historique_gonflages){
+                    when(historiqueGonflages){
                         null -> textHistoriqueGonflagesValue.text = "aucun historique de gonflage"
-                        else -> ari.historique_gonflages?.forEach {
-                            textHistoriqueGonflagesValue.append("${it}\n")
+                        else -> {
+                            textHistoriqueGonflagesValue.text = ""
+                            historiqueGonflages?.forEach {
+                                textHistoriqueGonflagesValue.append("${it}\n")
+                            }
                         }
                     }
-                    when(ari?.historique_controles){
+                    when(historiqueControles){
                         null -> textHistoriqueControlesValue.text = "aucun historique de contrôle"
-                        else -> ari.historique_controles?.forEach {
-                            textHistoriqueControlesValue.append("${it}\n")
+                        else -> {
+                            textHistoriqueControlesValue.text = ""
+                            historiqueControles?.forEach {
+                                textHistoriqueControlesValue.append("${it}\n")
+                            }
                         }
                     }
-                    when(ari?.historique_reparations){
+                    when(historiqueReparations){
                         null -> textHistoriqueReparationsValue.text = "aucun historique de réparation"
-                        else -> ari.historique_reparations?.forEach {
-                            textHistoriqueReparationsValue.append("${it}\n")
+                        else -> {
+                            textHistoriqueReparationsValue.text = ""
+                            historiqueReparations?.forEach {
+                                textHistoriqueReparationsValue.append("${it}\n")
+                            }
                         }
-                    }//TODO() restera plus qu'à tester quand la bdd et l'api seront update
+                    }
                 }
             }
         }
@@ -121,7 +144,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
 
 
 
-    data class ARI(
+    public data class ARI(
         var id:String,
         var etat_gonflage:Int,
         var lieu_stock:String,
@@ -160,10 +183,10 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                 val obj = JSONObject(array[i].toString())
                 if(obj.getString("ari")==id) {
                     val date = obj.getString("date")
-                    //TODO() à voir si on rajoute tous les param ou juste la date
                     list.add(date)
                 }
             }
+            list.sortDescending()
         }catch (e:JSONException){
             Log.d("Exception", e.toString())
         }
@@ -178,11 +201,13 @@ class MenuConsultationAriActivity : AppCompatActivity() {
             val array = JSONObject(data).getJSONArray("historique_controle")
             for(i in 0 until array.length()){
                 val obj = JSONObject(array[i].toString())
-                if(obj.getString("ari")==id) {
+                if(obj.getString("id")==id) {
                     val date = obj.getString("date")
+                    println(date)
                     list.add(date)
                 }
             }
+            list.sortDescending()
         }catch (e:JSONException){
             Log.d("Exception", e.toString())
         }
@@ -197,11 +222,12 @@ class MenuConsultationAriActivity : AppCompatActivity() {
             val array = JSONObject(data).getJSONArray("historique_repa")
             for(i in 0 until array.length()){
                 val obj = JSONObject(array[i].toString())
-                if(obj.getString("ari")==id) {
+                if(obj.getString("id")==id) {
                     val date = obj.getString("date")
                     list.add(date)
                 }
             }
+            list.sortDescending()
         }catch (e:JSONException){
             Log.d("Exception", e.toString())
         }

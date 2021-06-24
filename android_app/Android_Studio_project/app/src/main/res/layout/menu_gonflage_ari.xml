@@ -18,7 +18,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="80dp"
+        android:layout_width="90dp"
         android:layout_height="95dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButton_gonflage_oui"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/box_oui_ari"
@@ -34,7 +34,7 @@
             tools:layout_editor_absoluteY="175dp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton_gonflage_non"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/box_non_ari"
@@ -49,5 +49,41 @@
         app:icon="@drawable/ic_baseline_home_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_etat_gonflage_actuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etat_gonflage_actuel"
+        android:textColor="@color/bleu_titre"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/text_etat_gonflage_actuel_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/etat_gonflage_actuel_value"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_etat_gonflage_actuel" />
+
+    <TextView
+        android:id="@+id/text_nouvel_etat_gonflage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/nouvel_etat_gonflage"
+        android:textColor="@color/bleu_titre"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

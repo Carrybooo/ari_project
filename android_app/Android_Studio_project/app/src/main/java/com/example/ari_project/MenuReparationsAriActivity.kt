@@ -27,6 +27,6 @@ class MenuReparationsAriActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        title = getString(R.string.ID_equipe_entretien) + " " + scanID + " (Reparations)"//titre qui contient l'ID
+        title = getString(R.string.ID_equipe_entretien) + " " + scanID + " (Réparations)"//titre qui contient l'ID
     }
 }
