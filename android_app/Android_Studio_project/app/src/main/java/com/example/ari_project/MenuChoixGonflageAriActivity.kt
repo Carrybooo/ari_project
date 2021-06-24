@@ -9,8 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.ari_project.databinding.MenuGonflageAriBinding
-import kotlinx.android.synthetic.main.menu_gonflage_ari.*
+import com.example.ari_project.databinding.MenuChoixGonflageAriBinding
+import kotlinx.android.synthetic.main.menu_choix_gonflage_ari.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -20,10 +20,10 @@ import java.io.IOException
 import java.net.URL
 
 
-class MenuGonflageAriActivity : AppCompatActivity() {
+class MenuChoixGonflageAriActivity : AppCompatActivity() {
 
     //views refs
-    private lateinit var gonflageAriBinding: MenuGonflageAriBinding
+    private lateinit var gonflageAriBinding: MenuChoixGonflageAriBinding
     private lateinit var fieldEtatGonflage : TextView
     private lateinit var radioGroup: RadioGroup
     private lateinit var buttonValider: Button
@@ -40,7 +40,7 @@ class MenuGonflageAriActivity : AppCompatActivity() {
         val scanID = intent?.extras?.getString("id").toString()//Ligne qui extrait l'id de l'intent.
 
         //declarations éléments ---->
-        gonflageAriBinding = MenuGonflageAriBinding.inflate(layoutInflater)
+        gonflageAriBinding = MenuChoixGonflageAriBinding.inflate(layoutInflater)
         setContentView(gonflageAriBinding.root)
 
         fieldEtatGonflage = findViewById(R.id.text_etat_gonflage_actuel_valeur)

@@ -1,10 +1,7 @@
 package com.example.ari_project
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ari_project.databinding.MenuEntretienAriBinding
@@ -37,7 +34,7 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         }
 
         gonflagesButton.setOnClickListener {
-            val intent = Intent(this, MenuGonflageAriActivity::class.java)
+            val intent = Intent(this, MenuChoixGonflageAriActivity::class.java)
             intent.putExtra("id", scanID)
             startActivity(intent)
         }
