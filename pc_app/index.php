@@ -4,6 +4,7 @@
 	?>
 <html>
 <head>
+	<link rel="stylesheet" href="../../style.css" media="screen" type="text/css" />	
 	<meta charset="utf-8"/>
 <title>Poseidon</title>
 </head>
