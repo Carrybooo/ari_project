@@ -112,7 +112,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                         null -> textHistoriqueGonflagesValue.text = "aucun historique de gonflage"
                         else -> {
                             textHistoriqueGonflagesValue.text = ""
-                            historiqueGonflages?.forEach {
+                            historiqueGonflages.forEach {
                                 textHistoriqueGonflagesValue.append("${it}\n")
                             }
                         }
@@ -121,7 +121,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                         null -> textHistoriqueControlesValue.text = "aucun historique de contrôle"
                         else -> {
                             textHistoriqueControlesValue.text = ""
-                            historiqueControles?.forEach {
+                            historiqueControles.forEach {
                                 textHistoriqueControlesValue.append("${it}\n")
                             }
                         }
@@ -130,7 +130,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                         null -> textHistoriqueReparationsValue.text = "aucun historique de réparation"
                         else -> {
                             textHistoriqueReparationsValue.text = ""
-                            historiqueReparations?.forEach {
+                            historiqueReparations.forEach {
                                 textHistoriqueReparationsValue.append("${it}\n")
                             }
                         }
@@ -144,7 +144,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
 
 
 
-    public data class ARI(
+    data class ARI(
         var id:String,
         var etat_gonflage:Int,
         var lieu_stock:String,

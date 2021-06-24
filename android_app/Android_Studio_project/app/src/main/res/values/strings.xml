@@ -55,6 +55,13 @@
 
 
     //Ecran "Menu de gonflage" pour ARI
+
+    <string name="effect_gonflage_ari"> Effectuer un gonflage</string>
+    <string name="historique_gonflage_ari"> Historique </string>
+    <string name="text_historique_reparation_ari"> texte </string>
+    <string name="text_historique_gonflage_ari"> texte </string>
+
+    //Ecran "Menu de choix de gonflage" pour ARI
     <string name="box_oui_ari">Gonflé</string>
     <string name="box_non_ari">Dégonflé</string>
     <string name="validation_gonflage">Valider</string>
@@ -78,11 +85,6 @@
     //Ecran "Menu affectation remove" pour ARI
     //RIEN : réutilisation des variables d'autres écrans
 
-    //TEMP:
-    <string name="buttonPull">PULL</string>
-    <string name="effect_gonflage_ari"> Effectuer un gonflage</string>
-    <string name="historique_gonflage_ari"> Historique </string>
-    <string name="text_historique_reparation_ari"> texte </string>
-    <string name="text_historique_gonflage_ari"> texte </string>
     <string name="text_historique_controle_ari"> texte</string>
+
 </resources>

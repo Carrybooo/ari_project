@@ -34,7 +34,7 @@ class MenuEntretienAriActivity : AppCompatActivity() {
         }
 
         gonflagesButton.setOnClickListener {
-            val intent = Intent(this, MenuChoixGonflageAriActivity::class.java)
+            val intent = Intent(this, MenuGonflageAriActivity::class.java)
             intent.putExtra("id", scanID)
             startActivity(intent)
         }
