@@ -94,8 +94,6 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                 val historiqueGonflages = getHistoriqueGonflages(jsonHistoriqueGonflage, scanID)
                 val historiqueControles = getHistoriqueControles(jsonHistoriqueControle, scanID)
                 val historiqueReparations = getHistoriqueReparations(jsonHistoriqueReparation, scanID)
-                println(historiqueControles.toString())
-
 
                 // main dispatcher pour les interactions avec l'UI
                 withContext(Dispatchers.Main) {

@@ -56,26 +56,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-        /*
-        val selectedValGonflage = gonflageAriBinding.radioGroup.checkedRadioButtonId
-
-        when(selectedValGonflage){
-            R.id.radioButton -> "Oui" //Update la table avec gonflage à 1 si modif effective
-            R.id.radioButton2 -> "Non" //Update la table avec gonlfage à 0 si modif effective
-            else -> "You must check an option !" //Toast avec obligation de choisir une option
-        }
-        */
-
-        //GOOD get ancien etat
-        //case ->    ancien == nouveletat
-        //toast : c'est déjà l'état actuel.
-        //case ->    ancien != nouveletat
-        //url.envoyer(id, nouveletat)
-        //url.lire(id, etat)
-        //si etat == nouveletat
-        // -> change ecran -> modif bien prise en compte
-
         //IO dispatcher pour connexion réseau
         lifecycleScope.launch(Dispatchers.IO){
             try{jsonAriList = urlAriList.readText()}

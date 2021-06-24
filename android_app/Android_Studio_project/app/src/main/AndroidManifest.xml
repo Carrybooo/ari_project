@@ -67,6 +67,11 @@
             tools:ignore="LockedOrientationActivity">
         </activity>
 
+        <!--menu_controle_historique_ari-->
+        <activity android:name=".MenuControleHistoriqueAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
         <!--menu_entretien_ari-->
         <activity android:name=".MenuEntretienAriActivity"
             android:screenOrientation="portrait"

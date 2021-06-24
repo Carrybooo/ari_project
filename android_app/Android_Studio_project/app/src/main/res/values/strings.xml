@@ -58,8 +58,18 @@
 
     <string name="effect_gonflage_ari"> Effectuer un gonflage</string>
     <string name="historique_gonflage_ari"> Historique </string>
-    <string name="text_historique_reparation_ari"> texte </string>
-    <string name="text_historique_gonflage_ari"> texte </string>
+    //variables d'historique des 3 vues d'historiques
+    <string name="text_historique_reparation_ari">historique</string>
+    <string name="text_historique_controle_ari">historique</string>
+    /////////////////////////////////////////////////
+
+    //Menu "Gonflage historique" pour ARI
+    <string name="historique_gonflage_ari_id">ARI</string>
+    <string name="historique_gonflage_ari_date">Date</string>
+    <string name="historique_gonflage_ari_lieu">Lieu</string>
+    <string name="historique_gonflage_ari_compresseur">Comp</string>
+
+
 
     //Ecran "Menu de choix de gonflage" pour ARI
     <string name="box_oui_ari">Gonflé</string>
@@ -85,6 +95,5 @@
     //Ecran "Menu affectation remove" pour ARI
     //RIEN : réutilisation des variables d'autres écrans
 
-    <string name="text_historique_controle_ari"> texte</string>
 
 </resources>

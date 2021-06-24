@@ -22,11 +22,18 @@ class MenuReparationsAriActivity : AppCompatActivity() {
         setContentView(reparationsAriBinding.root)
 
         val accueil = findViewById<Button>(R.id.home_button)
+        val histoRepa = findViewById<Button>(R.id.historique_reparations_ari_button)
         val progRepa = findViewById<Button>(R.id.prog_repa_ari_button)
-        val effectRepa = findViewById<Button>(R.id.effect_controle_ari_button)
+        val effectRepa = findViewById<Button>(R.id.effect_repa_ari_button)
 
         accueil.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        histoRepa.setOnClickListener {
+            val intent = Intent(this, MenuReparationsHistoriqueAriActivity::class.java)
+            intent.putExtra("id",scanID)
             startActivity(intent)
         }
 

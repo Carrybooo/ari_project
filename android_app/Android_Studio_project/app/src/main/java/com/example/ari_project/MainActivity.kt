@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         val confirmButton = findViewById<Button>(R.id.confirmButton)
 
         confirmButton.setOnClickListener{
-            if(scanID.text.toString()=="Lecture en cours..."){
+            if(scanID.text.toString()=="Lecture en cours…"){
                 Toast.makeText(this,"Vous devez scanner un ID pour confirmer.",
                     Toast.LENGTH_SHORT).show()
             }else {
