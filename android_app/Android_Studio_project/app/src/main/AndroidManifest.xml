@@ -26,28 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--menu_ari_activity-->
-        <activity android:name=".MenuAriActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-        </activity>
-        <!--menu_entretien_ari-->
-        <activity android:name=".MenuEntretienAriActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-        </activity>
-        <!--menu_controle_ari-->
-        <activity android:name=".MenuControleAriActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-        </activity>
-        <!--menu_gonflage_ari-->
-        <activity android:name=".MenuChoixGonflageAriActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-        </activity>
-        <!--menu_reparations_ari-->
-        <activity android:name=".MenuReparationsAriActivity"
+        <!--menu_affectation_add_ari-->
+        <activity android:name=".MenuAffectationAddAriActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
@@ -56,18 +36,52 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
-        <!--menu_affectation_add_ari-->
-        <activity android:name=".MenuAffectationAddAriActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-        </activity>
         <!--menu_affectation_remove_ari-->
         <activity android:name=".MenuAffectationRemoveAriActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
+        <!--menu_ari_activity-->
+        <activity android:name=".MenuAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_gonflage_ari-->
+        <activity android:name=".MenuChoixGonflageAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
         <!--menu_consultation_ari-->
         <activity android:name=".MenuConsultationAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_controle_ari-->
+        <activity android:name=".MenuControleAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_entretien_ari-->
+        <activity android:name=".MenuEntretienAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".MenuGonflageAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_gonflage_historique_ari-->
+        <activity android:name=".MenuGonflageHistoriqueActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_reparations_ari-->
+        <activity android:name=".MenuReparationsAriActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <!--menu_reparations_historique_ari-->
+        <activity android:name=".MenuReparationsHistoriqueAriActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
