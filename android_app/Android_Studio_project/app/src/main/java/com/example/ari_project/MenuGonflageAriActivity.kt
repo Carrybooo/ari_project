@@ -31,5 +31,12 @@ class MenuGonflageAriActivity : AppCompatActivity() {
             intent.putExtra("id",scanID)
             startActivity(intent)
         }
+
+        val accueil = findViewById<Button>(R.id.home_button)
+
+        accueil.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
