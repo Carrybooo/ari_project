@@ -95,7 +95,7 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
 
 
     private fun getListGonflages(data:String, id:String): List<Gonflage>?{
-        var element = Gonflage(
+        var elementGonf = Gonflage(
             "","","",""
         )
         val list : MutableList<Gonflage> = mutableListOf<Gonflage>()
@@ -107,10 +107,10 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
                     val date = obj.getString("date")
                     val lieu = obj.getString("lieu")
                     val compresseur = obj.getString("compresseur")
-                    element = Gonflage(
+                    elementGonf = Gonflage(
                         id, date, lieu, compresseur
                     )
-                    list.add(element)
+                    list.add(elementGonf)
                 }
             }
             list.sortByDescending{it.date}//on trie bien les éléments pour avoir le plus récent en haut

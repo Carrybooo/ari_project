@@ -71,7 +71,7 @@
     //Menu "Controle historique" pour ARI
     <string name="historique_controle_ari_id">ARI</string>
     <string name="historique_controle_ari_date">Date</string>
-    <string name="historique_controle_ari_executeur">Lieu</string>
+    <string name="historique_controle_ari_executeur">Executeur</string>
 
     //Menu "Gonflage historique" pour ARI
     <string name="historique_gonflage_ari_id">ARI</string>
