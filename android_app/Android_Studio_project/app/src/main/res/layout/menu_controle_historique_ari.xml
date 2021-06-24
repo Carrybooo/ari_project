@@ -26,44 +26,31 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/text_historique_gonflage_ari_id"
+                android:id="@+id/text_historique_controle_ari_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/historique_gonflage_ari_id"
+                android:layout_marginStart="40dp"
+                android:text="@string/historique_controle_ari_id"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/text_historique_gonflage_ari_compresseur"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/text_historique_gonflage_ari_date"
+                android:id="@+id/text_historique_controle_ari_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/historique_gonflage_ari_date"
+                android:text="@string/historique_controle_ari_date"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/text_historique_gonflage_ari_compresseur"
-                app:layout_constraintHorizontal_bias="0.25"
-                app:layout_constraintStart_toEndOf="@+id/text_historique_gonflage_ari_id"
+                app:layout_constraintEnd_toStartOf="@+id/text_historique_controle_ari_executeur"
+                app:layout_constraintStart_toEndOf="@+id/text_historique_controle_ari_id"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/text_historique_gonflage_ari_lieu"
+                android:id="@+id/text_historique_controle_ari_executeur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/historique_gonflage_ari_lieu"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/text_historique_gonflage_ari_compresseur"
-                app:layout_constraintStart_toEndOf="@+id/text_historique_gonflage_ari_date"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/text_historique_gonflage_ari_compresseur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:text="@string/historique_gonflage_ari_compresseur"
+                android:layout_marginEnd="40dp"
+                android:text="@string/historique_controle_ari_executeur"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -63,6 +63,16 @@
     <string name="text_historique_controle_ari">historique</string>
     /////////////////////////////////////////////////
 
+
+    //Menu "Reparation historique" pour ARI
+    <string name="historique_reparation_ari_id">ARI</string>
+    <string name="historique_reparation_ari_date">Date</string>
+
+    //Menu "Controle historique" pour ARI
+    <string name="historique_controle_ari_id">ARI</string>
+    <string name="historique_controle_ari_date">Date</string>
+    <string name="historique_controle_ari_executeur">Lieu</string>
+
     //Menu "Gonflage historique" pour ARI
     <string name="historique_gonflage_ari_id">ARI</string>
     <string name="historique_gonflage_ari_date">Date</string>
