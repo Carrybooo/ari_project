@@ -7,6 +7,7 @@ $json = json_decode($content, true);
 <html>
 <head>
 	<title>Liste des Elements</title>
+  <link rel="stylesheet" href="../../style.css" media="screen" type="text/css" />
 	<meta charset="utf-8">
 </head>
 <style>
@@ -35,6 +36,7 @@ table tr td:last-child {
 }
 </style>
 <body>
+  <form>
 	<h3>La liste de tous les Elements</h3>
 <table>
 <thead>
@@ -55,6 +57,7 @@ foreach ($json['liste_elem'] as $key => $value) {
 ?>
 </tbody>
 </table>
+</form>
 <a href="http://ari.juliendrieu.fr"><button>Retour</button></a>
 </body>
 </html>
