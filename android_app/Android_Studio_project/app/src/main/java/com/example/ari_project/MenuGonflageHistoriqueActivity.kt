@@ -80,6 +80,8 @@ class MenuGonflageHistoriqueActivity : AppCompatActivity() {
             }
         }
 
+        title = getString(R.string.ID_equipe_histo) + " " + scanID + " (Gonflage)"//titre qui contient l'ID
+
 
     }//OnCreate
 

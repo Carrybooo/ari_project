@@ -73,7 +73,10 @@ class MenuReparationsHistoriqueAriActivity : AppCompatActivity() {
             }
 
         }
+
+        title = getString(R.string.ID_equipe_histo) + " " + scanID + " (Réparations)"//titre qui contient l'ID
     }
+
 
     data class Repa(
         var id: String,
