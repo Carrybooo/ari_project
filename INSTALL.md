@@ -1,14 +1,4 @@
-Ce projet possède deux parties distinctes. <br/>
-La première est une interface web, hébergée à l'adresse "adresse" (TO UPDATE), permettant d'accéder rapidement aux fonctionnalités depuis un navigateur.
-
-
-La seconde partie est une application mobile. <br/>
-Elle est installable via le fichier .apk situé à la racine de ce projet. Pour plus d'info :<br/>
-<a href="https://www.frandroid.com/comment-faire/tutoriaux/184151_comment-installer-un-fichier-apk-sur-son-terminal-android">Installer un fichier APK</a>
-  
-
-  
-Ou vous pouvez également décider de la compiler vous-même en important le projet Android-studio.<br/>
+Pour installer l'application, vous aurez besoin de la compiler vous-même en important le projet Android-studio.<br/>
 Pour ce faire, vous devez télécharger android studio ici : <a href="https://developer.android.com/studio">Android-Studio</a><br/>
 Vous devez ensuite lancer Android Studio, et faire attention à bien importer le projet situé ici :  ari_project/android_app/Anrdoid_Studio_Project <br/>
 
