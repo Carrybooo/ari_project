@@ -13,9 +13,9 @@ Elle n'est pour l'instant pas terminée, le temps nécessaire à formuler les at
 
 Liens utiles : 
 
-tableau de suivi : https://app.gitkraken.com/glo/board/X71jnLw5GgAS1qfw
+<a href="https://app.gitkraken.com/glo/board/X71jnLw5GgAS1qfw">Tableau de suivi (gitkraken board)</a><br/>
 (a été refait dans les 2 dernières semaines pour bien resituer les tâches à faire, il est donc normal que certaines tâches du début de projet n'apparaissent pas.)
 
-User stories : https://docs.google.com/spreadsheets/d/1bxpcVQE4O0Mf2xSeTMgnr1riCPJvIr4UfCWGju5OO98/edit#gid=1679911286
+<a href="https://docs.google.com/spreadsheets/d/1bxpcVQE4O0Mf2xSeTMgnr1riCPJvIr4UfCWGju5OO98/edit#gid=1679911286">User stories</a>
 
-ScreeenCast : https://youtu.be/yr9-LHlg6m0
+<a href="https://youtu.be/yr9-LHlg6m0">ScreenCast</a>
