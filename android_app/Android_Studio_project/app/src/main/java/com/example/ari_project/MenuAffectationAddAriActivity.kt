@@ -113,10 +113,11 @@ class MenuAffectationAddAriActivity : AppCompatActivity(){
                                         jsonResponse=jsonResponse.replace("\\u00e9","é")
                                         //on l'affiche
                                         Toast.makeText(affectation_add_confirm_button.context,
-                                            jsonResponse,Toast.LENGTH_LONG).show()
+                                            jsonResponse+" Nouvelle affectation : "+affectNew,
+                                            Toast.LENGTH_LONG).show()
                                         //on retourne à l'écran principal
-                                        val intent =
-                                            Intent(affectation_add_confirm_button.context, MainActivity::class.java)
+                                        val intent = Intent(affectation_add_confirm_button.context,
+                                            MainActivity::class.java)
                                         startActivity(intent)
                                     }
                                 }

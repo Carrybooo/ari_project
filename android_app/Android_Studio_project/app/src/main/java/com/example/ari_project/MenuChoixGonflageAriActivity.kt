@@ -99,7 +99,8 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                     jsonResponse=jsonResponse.replace("\\u00e9","é")
                                     //on l'affiche
                                     Toast.makeText(buttonValider.context,
-                                        jsonResponse,Toast.LENGTH_LONG).show()
+                                        jsonResponse +" Nouvel état de gonflage : Gonflé !",
+                                        Toast.LENGTH_LONG).show()
                                     startActivity(intent)
                                 }
                                 //Update la table avec gonlfage à 0 si modif effective
@@ -118,7 +119,8 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                     jsonResponse=jsonResponse.replace("\\u00e9","é")
                                     //on l'affiche
                                     Toast.makeText(buttonValider.context,
-                                        jsonResponse,Toast.LENGTH_LONG).show()
+                                        jsonResponse +" Nouvel état de gonflage : Dégonflé !",
+                                        Toast.LENGTH_LONG).show()
                                     startActivity(intent)
                                 }
                                 //Toast avec obligation de choisir une option

@@ -100,7 +100,7 @@ class MenuConsultationAriActivity : AppCompatActivity() {
                     etatGonflage.text = when(ari?.etat_gonflage){
                         null -> "ID non trouvé"
                         1 -> "Gonflé"
-                        else -> "Non gonflé/Défectueux"
+                        else -> "Non gonflé"
                     }
                     lieuStock.text = when(ari?.lieu_stock){
                         null -> "ID non trouvé"
