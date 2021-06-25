@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
         val confirmButton = findViewById<Button>(R.id.confirmButton)
 
         confirmButton.setOnClickListener{
-            if(scanID.text.toString()=="Lecture en cours…"){
-                Toast.makeText(this,"Vous devez scanner un ID pour confirmer.",
+            if(!scanID.text.toString().startsWith("ARI")){
+                Toast.makeText(this,"Vous devez scanner un ID d'ARI pour confirmer.",
                     Toast.LENGTH_SHORT).show()
             }else {
                 val intent = Intent(this, MenuAriActivity::class.java)//TODO() A CHANGER

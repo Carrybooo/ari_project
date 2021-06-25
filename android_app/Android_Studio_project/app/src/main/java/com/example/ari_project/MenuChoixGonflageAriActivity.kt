@@ -75,8 +75,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                         1 -> "Gonflé"
                         else -> "Dégonflé"
                     }
-
-                    print("SCANID------------------------------------------------"+scanID)
                     buttonValider.setOnClickListener {
                         if(fieldEtatGonflage.text == "ID non trouvé"){
                             Toast.makeText(radioButton_gonflage_oui.context,"Cet ID d'ARI n'existe pas !",
@@ -95,7 +93,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                 } else {
                                     urlModifEtatGonflage = URL(urlModifEtatGonflage.toString()+
                                     "?id="+scanID+"&etat_gonflage=1")
-                                    println("URLLLLLLLLLLLLLLLLL\n\n\n"+urlModifEtatGonflage.toString())
                                     try{jsonResponse = urlModifEtatGonflage.readText()}
                                     catch (e: IOException){e.toString()}
                                     //on formate la réponse (problème avec les caratères spéciaux)
@@ -103,7 +100,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                     //on l'affiche
                                     Toast.makeText(buttonValider.context,
                                         jsonResponse,Toast.LENGTH_LONG).show()
-                                    println("GONFLAGE ARI ------------------------")
                                     startActivity(intent)
                                 }
                                 //Update la table avec gonlfage à 0 si modif effective
@@ -116,8 +112,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                 } else {
                                     urlModifEtatGonflage = URL(urlModifEtatGonflage.toString()+
                                             "?id="+scanID+"&etat_gonflage=0")
-                                    println("URLLLLLLLLLLLLLLLLL\n\n\n"+urlModifEtatGonflage.toString())
-
                                     try{jsonResponse = urlModifEtatGonflage.readText()}
                                     catch (e: IOException){e.toString()}
                                     //on formate la réponse (problème avec les caratères spéciaux)
@@ -125,7 +119,6 @@ class MenuChoixGonflageAriActivity : AppCompatActivity() {
                                     //on l'affiche
                                     Toast.makeText(buttonValider.context,
                                         jsonResponse,Toast.LENGTH_LONG).show()
-                                    println("GONFLAGE ARI ------------------------")
                                     startActivity(intent)
                                 }
                                 //Toast avec obligation de choisir une option
