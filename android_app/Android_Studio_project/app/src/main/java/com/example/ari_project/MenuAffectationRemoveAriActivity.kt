@@ -13,15 +13,14 @@ class MenuAffectationRemoveAriActivity : AppCompatActivity(){
 
     private lateinit var affectRemove : MenuAffectationRemoveAriBinding
     private lateinit var textViewID : TextView
-    private lateinit var ConfirmButton: Button
+    private lateinit var confirmButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         affectRemove = MenuAffectationRemoveAriBinding.inflate(layoutInflater)
         setContentView(affectRemove.root)
-
-        ConfirmButton = findViewById(R.id.affectation_remove_confirm_button)
+        confirmButton = findViewById(R.id.affectation_remove_confirm_button)
         textViewID = findViewById(R.id.text_id_affect_remove)
 
         //Scan ID
