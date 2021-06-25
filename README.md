@@ -1,4 +1,8 @@
+<p align = "center">
 Répertoire de projet universitaire ayant pour but la gestion et la maintenance du matériel des pompiers.
+<br/>
+<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3%2B-blue.svg" alt="License: GPL v3+"></a>
+</p>
 
 Auteurs : 
 - Guerlesquin Valentin
