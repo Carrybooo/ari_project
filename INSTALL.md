@@ -1,5 +1,5 @@
 Ce projet possède deux parties distinctes. <br/>
-La première est une interface web, hébergée à l'adresse "<adresse>", permettant d'accéder rapidement aux fonctionnalités depuis un navigateur.
+La première est une interface web, hébergée à l'adresse "adresse" (TO UPDATE), permettant d'accéder rapidement aux fonctionnalités depuis un navigateur.
 
 
 La seconde partie est une application mobile. <br/>
