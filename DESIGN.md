@@ -4,8 +4,11 @@ Ils sont toujours sujets à d'éventuelles modifications, et seraient mis à jou
 
 <p align = center>
 Diagramme UML représentant la structure de la base de données</br>
-![diagramme BDD](/ressources/uml_bdd.png)</br>
+![diagramme Bdd](/ressources/uml_bdd.png)</br>
 
+</br>
+</br>
+</br>
 
 Schema de l'arborescence des vues de l'application mobile</br>
 ![schema appli](/ressources/schema_appli.png)</br>
