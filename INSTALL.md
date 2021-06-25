@@ -11,12 +11,13 @@ Elle est installable via le fichier .apk situé à la racine de ce projet. Pour 
 Ou vous pouvez également décider de la compiler vous-même en important le projet Android-studio.<br/>
 Pour ce faire, vous devez télécharger android studio ici : <a href="https://developer.android.com/studio">Android-Studio</a><br/>
 Vous devez ensuite lancer Android Studio, et faire attention à bien importer le projet situé ici :  ari_project/android_app/Anrdoid_Studio_Project <br/>
+
 Puis passer votre téléphone en mode développeur : 
   <a href="https://www.frandroid.com/comment-faire/tutoriaux/184906_comment-acceder-au-mode-developpeur-sur-android">Acceder au mode developpeur</a><br/>
 Une fois les option développeur révélées, vous devez activer le "debogage USB" dans ces dernières.
   
 Alors enfin, vous devriez pouvoir brancher votre téléphone à votre ordinateur via un cable USB,<br/>
-(une fenetre devrait s'ouvrir sur votre téléphone vous demandant d'autoriser le débogage USB sur cet ordinateur, cochez la case "toujours autoriser")<br/>
+(une fenêtre devrait s'ouvrir sur votre téléphone vous demandant d'autoriser le débogage USB sur cet ordinateur, cochez la case "toujours autoriser")<br/>
 et vous pourrez alors cliquer sur l'onglet "Run" en haut, puis sur "Run App" (ou utiliser le raccourci Maj + F10).<br/>
 L'application s'installera alors sur votre téléphone, et restera utilisable même une fois Android-studio fermé.<br/>
 (Laissez le temps à l'application de s'installer, le premier build est toujours un peu long)<br/>
