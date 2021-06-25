@@ -23,4 +23,4 @@ Liens utiles :
 
 <a href="https://youtu.be/yr9-LHlg6m0">ScreenCast de l'appli</a>
 
-<a href="https://www.youtube.com/watch?v=HyU5XAvGSn0">ScreenCast du site</a>
+<a href="https://www.youtube.com/watch?v=Z8v8JIV2APY">ScreenCast du site</a>
